@@ -1,0 +1,7 @@
+role 'CENTRO MAX'
+	modelPermission: read
+
+	tablePermission Sucursales = [Sucursal] == "CENTRO MAX" && [Sucursal] == "FORUM"
+
+	annotation PBI_Id = d4cb8a12dda740a8a863bb376a704908
+

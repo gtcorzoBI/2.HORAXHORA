@@ -1,0 +1,155 @@
+table MEDIDAS
+	lineageTag: c2b616ad-6536-45ed-82fd-d3ff825a7d0c
+
+	measure 'Total Factura sin iva' = SUM(QVN[TOTAL_FACTURA_SIN_IVA])
+		lineageTag: c8d90f93-f22f-453a-8970-5c9df8a0388c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'PY total factura' =
+			
+			
+			CALCULATE([Total Factura sin iva],SAMEPERIODLASTYEAR(Calendario[Date]))
+		lineageTag: f73c3364-751c-48b1-8119-ed8524be61ff
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure UTILIDAD =
+			
+			VAR UTILIDADBRUTA = SUM(QVN[TOTAL_FACTURA_SIN_IVA]) + SUM(QVN[SV_REBATES]) +SUM(QVN[SV_REBATE INTERNO]) + SUM(QVN[SV_REBATES FINANCIERAS]) + SUM(QVN[SV_REBATE SICREA]) -SUM(QVN[VALOR_COMPRA]) - SUM(QVN[IMPUESTO AUTOS NUEVO]) - SUM(QVN[SV_SUBSIDIO]) - SUM(QVN[REACONDICINAMIENTO VEHICULOS NUEVOS])
+			
+			VAR GASTOSEXCEDENTES = SUM(QVN[SV_PRECIO UNICO]) + SUM(QVN[SV_IMPULSO MERCANTIL]) + SUM(QVN[SV_CDIF. INTERESES CREDITO INTERNO]) + SUM(QVN[SV_EXCEDENTE_GASOLINA])
+			
+			VAR GASTOSAUTORIZADOS = SUM(QVN[SV_KIT_ENTREGA]) + SUM(QVN[SV_TRASLADO UNIDADES Y/O REFACCIONES]) + SUM(QVN[SV_COSTO FINANCIERO])
+			
+			VAR UTILIDAD = UTILIDADBRUTA - GASTOSAUTORIZADOS- GASTOSEXCEDENTES
+			
+			RETURN UTILIDAD
+		lineageTag: 085d7752-4cfc-4fa5-8f90-2b86b5125ea0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'PY UTILIDAD' =
+			
+			
+			CALCULATE([UTILIDAD],SAMEPERIODLASTYEAR(Calendario[Date]))
+		lineageTag: a72759cd-581b-4098-ab0f-3fd787f4ad1e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MEDIANA_UNIDADES_MES =
+			
+			AVERAGEX(
+			    VALUES(Calendario[Mes]),
+			    CALCULATE(COUNT('QVN'[VIN]))
+			)
+		lineageTag: 70aab5c1-6251-4475-9b67-eab2079f26fc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MEDIANA_UNIDADES_DIA =
+			
+			MEDIANX(
+			    VALUES(QVN[FECHA_FACTURA]),
+			    CALCULATE(COUNT('QVN'[VIN]))
+			)
+		lineageTag: 057b5222-f0e2-457a-95b6-07952481f7e9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'DIAS RESERVA' = DATEDIFF(SELECTEDVALUE(QINVN[FEC_RESERVA]),TODAY(),DAY)
+		formatString: 0
+		lineageTag: f8e3513d-fe2a-4b0d-b51c-0b4587842821
+
+	measure FACTURAS = CALCULATE(DISTINCTCOUNT(QVN[IDV]),DATESYTD(Calendario[Date]))
+		formatString: 0
+		lineageTag: feda2139-6813-4eb6-a701-d591a68a5242
+
+	measure 'PY FACTURAS' = CALCULATE([FACTURAS],SAMEPERIODLASTYEAR(Calendario[Date]))
+		formatString: 0
+		lineageTag: 33038ea0-d84a-4ef3-8f93-40aa048b9000
+
+	measure ticketPromedio = MEDIAN(QVN[TOTAL_FACTURA_SIN_IVA])
+		lineageTag: e21341ad-d9b8-4211-8a56-b1427e2cf2ab
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Ventas Últimos 3 Meses' = ```
+			
+			VAR FinMesAnterior = EOMONTH(TODAY(), -1)
+			VAR InicioRango = EOMONTH(FinMesAnterior, -3) + 1
+			
+			RETURN
+			CALCULATE(
+			    COUNT(QVN[IDV]),
+			    'Calendario'[Date] >= InicioRango &&
+			    'Calendario'[Date] <= FinMesAnterior
+			)
+			
+			```
+		formatString: 0
+		lineageTag: c0a6779f-a556-4d5f-976d-fb05456d553c
+
+	measure PROMEDIO_3_MESES = [Ventas Últimos 3 Meses]/3
+		lineageTag: d9341752-b22b-4523-9f56-dc691fc20b1e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MS = COUNT(INVENTARIO_VIVO[IDV])/[PROMEDIO_3_MESES]
+		lineageTag: 4ccf7051-bc97-40e2-83f5-ac7ccb70da82
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '30 a 60 dias' =
+			
+			CALCULATE(
+			    COUNTROWS(INVENTARIO_VIVO),
+			    'INVENTARIO_VIVO'[RANGO_DIAS] = "30 a 60 dias"
+			)
+		formatString: 0
+		lineageTag: 3e6dbac8-0af1-4111-90ec-0aff247b8393
+
+	measure '61 a 90 dias' =
+			
+			CALCULATE(
+			    COUNTROWS(INVENTARIO_VIVO),
+			    'INVENTARIO_VIVO'[RANGO_DIAS] = "61 a 90 dias"
+			)
+		formatString: 0
+		lineageTag: 5108245e-e9a5-4fea-b144-3311fb94acf6
+
+	measure 'Más de 90 días' =
+			
+			CALCULATE(
+			    COUNTROWS(INVENTARIO_VIVO),
+			    'INVENTARIO_VIVO'[RANGO_DIAS] = "Mas de 90 dias"
+			)
+		formatString: 0
+		lineageTag: 0f9366bf-01b2-49a9-9949-05539866c61b
+
+	measure 'MENOR A 30 DIAS' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('INVENTARIO_VIVO'[BASTIDOR]),
+			    FILTER(
+			        'INVENTARIO_VIVO',
+			        TRIM('INVENTARIO_VIVO'[RANGO_DIAS]) = "MENOR A 30 DIAS"
+			    )
+			)
+		formatString: 0
+		lineageTag: d6530bce-46b9-47b6-a3a2-836ed8c3091f
+
+	column Value
+		lineageTag: 790902fa-f72b-4a0f-be5f-525e4bdf18d5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MEDIDAS = calculated
+		mode: import
+		source = {""}
+
+	annotation PBI_Id = 7557e388a792415f86c05d1513aebf66
+

@@ -1,0 +1,7 @@
+role CORPORATIVO
+	modelPermission: read
+
+	tablePermission Sucursales = [CSA] == "BAJIO" || [CSA] == "SLP" || [CSA] == "MG" || [CSA] == "CDMX"
+
+	annotation PBI_Id = 1b6ef5ddb57a4249a22caf8c713ab623
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "HORA POR HORA COMERCIAL"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a6dbe932-3eaf-47b9-b9e2-9f4d8cc1118d"
+  }
+}

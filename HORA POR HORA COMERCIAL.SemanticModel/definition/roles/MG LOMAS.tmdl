@@ -1,0 +1,7 @@
+role 'MG LOMAS'
+	modelPermission: read
+
+	tablePermission Sucursales = [Sucursal] == "MG LOMAS"
+
+	annotation PBI_Id = 91848c2d3d644f59bdfdb70748b67311
+

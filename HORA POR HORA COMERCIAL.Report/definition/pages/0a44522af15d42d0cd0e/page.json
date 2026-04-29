@@ -1,0 +1,176 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "0a44522af15d42d0cd0e",
+  "displayName": "Duplicado de Ventas del Dia",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "983f2f71810198c302a9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "VNDAILY"
+              }
+            },
+            "Property": "TIPOVENTA"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "v",
+              "Entity": "VNDAILY",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "TIPOVENTA"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'OTROS'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "335L"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": -0.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "pageRefresh": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "duration": {
+            "expr": {
+              "Literal": {
+                "Value": "'PT5M'"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "f81e48251d86c3be3c4d",
+      "target": "7a320321ff91404d7c05",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f81e48251d86c3be3c4d",
+      "target": "f2ea62dc9d5783320e0d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f81e48251d86c3be3c4d",
+      "target": "e42b5a82d7971843b27f",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f2ea62dc9d5783320e0d",
+      "target": "f81e48251d86c3be3c4d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7a320321ff91404d7c05",
+      "target": "f81e48251d86c3be3c4d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e42b5a82d7971843b27f",
+      "target": "f81e48251d86c3be3c4d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "7a320321ff91404d7c05",
+      "target": "f2ea62dc9d5783320e0d",
+      "type": "HighlightFilter"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+role CARRANZA
+	modelPermission: read
+
+	tablePermission Sucursales = [Sucursal] == "CARRANZA" || [Sucursal] == "LOMAS"
+
+	annotation PBI_Id = b8c8f16dd127446081f02c7d476c07f1
+

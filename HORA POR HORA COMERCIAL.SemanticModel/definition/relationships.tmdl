@@ -1,0 +1,133 @@
+relationship a67ff79e-1661-4efd-b7d0-c380746d6f8c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: QINVN.FECHA
+	toColumn: LocalDateTable_d820dcc9-48b0-495e-ad99-42b5cc859030.Date
+
+relationship c0d6a139-b4b5-4db6-b7f2-2964e2808cef
+	joinOnDateBehavior: datePartOnly
+	fromColumn: QINVN.FEC_ADJUDICACION
+	toColumn: LocalDateTable_b4dc32e1-64fd-489b-ac0f-9911b0aa71cc.Date
+
+relationship 09570e6a-a7d5-c268-13dd-491ed1659025
+	fromColumn: QVN.AGENCIA
+	toColumn: Sucursales.Sucursal
+
+relationship d4a15139-efa1-348a-7c1c-6f637c2bb531
+	fromColumn: QINVN.AGENCIA
+	toColumn: Sucursales.Sucursal
+
+relationship 29b461c3-8a3f-190d-6f19-4e93256a9952
+	fromColumn: QVN.FECHA_FACTURA
+	toColumn: Calendario.Date
+
+relationship 917e7fe8-5122-4b0b-8c08-94148d9d53a6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CalendarioEntregas.Date
+	toColumn: LocalDateTable_b6922567-0125-48aa-9936-4283ce50058a.Date
+
+relationship f34992d0-75e9-5976-6a87-27dbb542fec4
+	fromColumn: QVN.FECHA_REPORTE_GTC
+	toColumn: CalendarioEntregas.Date
+
+relationship 4b832971-28ba-43a3-bb13-c54b7a673c85
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RCN.'Fecha NISSAN'
+	toColumn: LocalDateTable_53710ad3-c566-44a7-9ae3-704806f1575c.Date
+
+relationship dde9a5a5-97d1-434d-a018-3591acd570ed
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RCN.FechaFacturaNis
+	toColumn: LocalDateTable_7382a5a9-1c55-49e4-a0fd-e75228e9bd41.Date
+
+relationship bc4f3a18-f654-4b4f-94c0-651eb6686f22
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RCN.FechaRecepcionDist
+	toColumn: LocalDateTable_589d22e8-9e54-40c5-ad25-1de86b54a45d.Date
+
+relationship b0ee19af-0c8d-4556-84a7-51fce116339d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RCN.FechaFacturaCliente
+	toColumn: LocalDateTable_2c9d4cd3-bddb-4b7d-8dfd-05aeaf1929ea.Date
+
+relationship 617b002d-1ab7-4e4d-8722-8336f6e9f02b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RCN.FechaCapturaVenta
+	toColumn: LocalDateTable_74f5eb79-6e31-4e2a-b9e9-7447b734d6fb.Date
+
+relationship 513731db-11ed-26e9-057b-f250e9385ad5
+	fromColumn: QINVN.VIN
+	toColumn: RCN.Vin
+
+relationship 872fcde8-1df0-9688-67b5-3ebf0bc7f215
+	fromColumn: VNDAILY.Sucursal
+	toColumn: Sucursales.Sucursal
+
+relationship 73afdf7a-a795-d967-2734-3d58e122a000
+	fromColumn: PIPEFYFULL.SUCURSAL
+	toColumn: Sucursales.Sucursal
+
+relationship fa3b468f-3eb3-6e59-6092-47addc519710
+	fromColumn: INVENTARIO_VIVO.Sucursal
+	toColumn: Sucursales.Sucursal
+
+relationship 4a684b8a-1625-4f1e-bdca-6387e8488405
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'RCN (2)'.'Fecha NISSAN'
+	toColumn: LocalDateTable_a13a2ab1-a4d1-4530-ab24-98eb0d0678b1.Date
+
+relationship f13bac2c-125c-477d-9c14-c6975f534dd7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'RCN (2)'.FechaFacturaNis
+	toColumn: LocalDateTable_c4dc57d3-7872-4e21-8f3a-ac661a88c996.Date
+
+relationship 09780f05-eef0-454e-8b42-4a0c93b6d3f1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'RCN (2)'.FechaRecepcionDist
+	toColumn: LocalDateTable_74cf515c-1b6c-4343-b79c-917ab5610f35.Date
+
+relationship b5f3ed2a-e994-4b7f-b476-44bf385d4dec
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'RCN (2)'.FechaFacturaCliente
+	toColumn: LocalDateTable_25fda7ee-7fd2-4e15-81a1-9581613511e0.Date
+
+relationship cb800811-d36f-47a6-bc39-483baea54195
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'RCN (2)'.FechaCapturaVenta
+	toColumn: LocalDateTable_7fde0bbb-5f39-4053-85d8-81921012b589.Date
+
+relationship 4be18345-3d1d-18ca-711c-acf8112d0769
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'RCN (2)'.Vin
+	toColumn: INVENTARIO_VIVO.BASTIDOR
+
+relationship 951a5b41-7590-2775-a6ae-1bca256c6c21
+	fromColumn: PIPEFYFULL.FECHA_FACTURA
+	toColumn: Calendario.Date
+
+relationship 086d7308-abe9-b5d0-d6f4-d62ba6c2f588
+	toCardinality: many
+	fromColumn: VNDAILY.VIN
+	toColumn: QINVN.VIN
+
+relationship f491a4ea-b098-a47f-2266-078ec9153d31
+	fromColumn: QVN.UNIDAD_TIPO
+	toColumn: 'QBI VERSION&FAMILIA'.DES_MODELO
+
+relationship 62a075d5-e238-3971-6dcf-beb876906ec4
+	fromColumn: INVENTARIO_VIVO.VERSION
+	toColumn: 'QBI VERSION&FAMILIA'.DES_MODELO
+
+relationship 840a3e69-d27b-7e69-0b32-9270b4c8a18e
+	fromColumn: INVENTARIO_VIVO.ESTADO_FINAL
+	toColumn: 'Estados Clasificacion'.Estado
+
+relationship 6e6012d0-5963-9f8f-533f-45f41e44d80f
+	fromColumn: QINVN.P8
+	toColumn: 'Estados Clasificacion'.Estado
+
+relationship 36db1fe8-ec0f-4447-aa54-1d927a410ae2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: QVN.FEC_APERTURA
+	toColumn: LocalDateTable_fbb4e342-c98a-4625-b462-34001fb967d4.Date
+

@@ -1,0 +1,95 @@
+table Calendario
+	lineageTag: 1ed28b05-8134-46e7-ad4f-91e069882458
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: Long Date
+		lineageTag: 03b7cdd7-b135-482c-8805-f1af2db23722
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Año
+		formatString: 0
+		lineageTag: fe8ef0d6-830a-4c6c-a11c-37eed037dbab
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Año]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		lineageTag: 401132ae-194e-4e43-a301-a5beb3ec5fca
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes]
+		sortByColumn: 'Mes N°'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mes N°'
+		formatString: 0
+		lineageTag: bdfc69b6-34ec-4751-9952-5ea9c9dd2e0e
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mes N°]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: 750a4290-5281-4fe3-8b59-3ba1f6097530
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Día
+		formatString: 0
+		lineageTag: cbeee5c3-c4c0-453b-a4ed-34bc9546248b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Día]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Día Semana'
+		lineageTag: 1c332e5a-e0dd-4d10-8b09-bff4aa7e665e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Día Semana]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Número Semana'
+		formatString: 0
+		lineageTag: 771c2051-bd15-4491-bacb-9e48ee0c3df1
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Número Semana]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendario = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS (
+				    CALENDAR (DATE(2024, 1, 1), TODAY()), 
+				    "Año", YEAR([Date]),
+				    "Mes", FORMAT([Date], "MMMM"),
+				    "Mes N°", MONTH([Date]),
+				    "Trimestre", "Q" & FORMAT([Date], "Q"),
+				    "Día", DAY([Date]),
+				    "Día Semana", FORMAT([Date], "dddd"),
+				    "Número Semana", WEEKNUM([Date])
+				)
+				```
+
+	annotation PBI_Id = 44e659382cd042b3bddb41f425e2b51b
+

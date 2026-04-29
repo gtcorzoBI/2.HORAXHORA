@@ -1,0 +1,220 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY25SU11",
+      "reportVersionAtImport": {
+        "visual": "2.4.0",
+        "report": "3.0.0",
+        "page": "2.3.0"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8b52b8f0531a5dbd725d",
+        "field": {
+          "GroupRef": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "QVN"
+              }
+            },
+            "Property": "Grupo Venta",
+            "GroupedColumns": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QVN"
+                    }
+                  },
+                  "Property": "TIPO_DE_VENTA"
+                }
+              }
+            ]
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "q",
+              "Entity": "QVN",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "q"
+                          }
+                        },
+                        "Property": "Grupo Venta"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'FLOTILLA'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'MENUDEO'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isLockedInViewMode": true
+      }
+    ]
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "textFilter25A4896A83E0487089E2B90C9AE57C8A"
+  ],
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "BORRAR45787229631219695.png",
+          "path": "BORRAR45787229631219695.png",
+          "type": "Image"
+        },
+        {
+          "name": "compra9226855438381576.png",
+          "path": "compra9226855438381576.png",
+          "type": "Image"
+        },
+        {
+          "name": "dinero9187426691089753.png",
+          "path": "dinero9187426691089753.png",
+          "type": "Image"
+        },
+        {
+          "name": "duda5372101631768169.png",
+          "path": "duda5372101631768169.png",
+          "type": "Image"
+        },
+        {
+          "name": "duda9765714275012085.png",
+          "path": "duda9765714275012085.png",
+          "type": "Image"
+        },
+        {
+          "name": "entrega8493783556047982.png",
+          "path": "entrega8493783556047982.png",
+          "type": "Image"
+        },
+        {
+          "name": "Imagen103044256806268708.png",
+          "path": "Imagen103044256806268708.png",
+          "type": "Image"
+        },
+        {
+          "name": "Imagen107296378493060462.png",
+          "path": "Imagen107296378493060462.png",
+          "type": "Image"
+        },
+        {
+          "name": "inve08390013367039961.png",
+          "path": "inve08390013367039961.png",
+          "type": "Image"
+        },
+        {
+          "name": "inve215178839271518985.png",
+          "path": "inve215178839271518985.png",
+          "type": "Image"
+        },
+        {
+          "name": "inve23631051057786979.png",
+          "path": "inve23631051057786979.png",
+          "type": "Image"
+        },
+        {
+          "name": "lista1802971388566763.png",
+          "path": "lista1802971388566763.png",
+          "type": "Image"
+        },
+        {
+          "name": "Persona3570620809913627.png",
+          "path": "Persona3570620809913627.png",
+          "type": "Image"
+        },
+        {
+          "name": "venta7656410503245464.png",
+          "path": "venta7656410503245464.png",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY25SU11",
+          "path": "BaseThemes/CY25SU11.json",
+          "type": "BaseTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

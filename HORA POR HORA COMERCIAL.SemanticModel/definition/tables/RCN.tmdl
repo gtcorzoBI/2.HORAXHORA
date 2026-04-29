@@ -1,0 +1,297 @@
+table RCN
+	lineageTag: fe8e45bd-7b5c-4727-bac0-b4acb46ad091
+
+	column 'Fecha NISSAN'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ab43f616-72cb-4dc3-a5e8-6c7d45550ad3
+		summarizeBy: none
+		sourceColumn: Fecha NISSAN
+
+		variation Variación
+			isDefault
+			relationship: 4b832971-28ba-43a3-bb13-c54b7a673c85
+			defaultHierarchy: LocalDateTable_53710ad3-c566-44a7-9ae3-704806f1575c.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Distribuidor
+		dataType: int64
+		formatString: 0
+		lineageTag: 20115663-badc-4e7a-b661-06bc37c2e229
+		summarizeBy: sum
+		sourceColumn: Distribuidor
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombre
+		dataType: string
+		lineageTag: 1ff7c875-dd0a-4178-b2cf-ca6ff3cd2348
+		summarizeBy: none
+		sourceColumn: Nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cuota
+		dataType: int64
+		formatString: 0
+		lineageTag: 176301c2-3b1c-4a86-9ab2-75413adb9fc0
+		summarizeBy: sum
+		sourceColumn: Cuota
+
+		annotation SummarizationSetBy = Automatic
+
+	column CveApv
+		dataType: int64
+		formatString: 0
+		lineageTag: be0ea50c-6c64-485b-a38d-dbe9ac624ce9
+		summarizeBy: sum
+		sourceColumn: CveApv
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vin
+		dataType: string
+		lineageTag: bfa861fc-9a76-48e3-be2d-02746dc0f329
+		summarizeBy: none
+		sourceColumn: Vin
+
+		annotation SummarizationSetBy = Automatic
+
+	column Orden
+		dataType: int64
+		formatString: 0
+		lineageTag: 09ea7e9b-4a92-4bdc-a3a2-04725177203e
+		summarizeBy: sum
+		sourceColumn: Orden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Motor
+		dataType: string
+		lineageTag: 03b6dbaf-43bc-4330-8179-ab0d5cafe69c
+		summarizeBy: none
+		sourceColumn: Motor
+
+		annotation SummarizationSetBy = Automatic
+
+	column ColorExterior
+		dataType: string
+		lineageTag: 02bb01a0-4758-4a29-94d0-20907ae6d363
+		summarizeBy: none
+		sourceColumn: ColorExterior
+
+		annotation SummarizationSetBy = Automatic
+
+	column ColorInterior
+		dataType: string
+		lineageTag: 1fe189cc-dd12-4637-b363-ba99aa257297
+		summarizeBy: none
+		sourceColumn: ColorInterior
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cabecera
+		dataType: string
+		lineageTag: 80d355d8-d4af-4d4b-895a-58588b988b96
+		summarizeBy: none
+		sourceColumn: Cabecera
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumeroFacturaNis
+		dataType: int64
+		formatString: 0
+		lineageTag: c91706c8-50d1-401f-83ec-c2afb58aece4
+		summarizeBy: sum
+		sourceColumn: NumeroFacturaNis
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaFacturaNis
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cd5da3fd-5e7a-4c58-830c-a4061e6e3718
+		summarizeBy: none
+		sourceColumn: FechaFacturaNis
+
+		variation Variación
+			isDefault
+			relationship: dde9a5a5-97d1-434d-a018-3591acd570ed
+			defaultHierarchy: LocalDateTable_7382a5a9-1c55-49e4-a0fd-e75228e9bd41.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column FechaRecepcionDist
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 781588ee-becc-423b-89e9-ed6d3b12bba2
+		summarizeBy: none
+		sourceColumn: FechaRecepcionDist
+
+		variation Variación
+			isDefault
+			relationship: bc4f3a18-f654-4b4f-94c0-651eb6686f22
+			defaultHierarchy: LocalDateTable_589d22e8-9e54-40c5-ad25-1de86b54a45d.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column NumeroFacturaCliente
+		dataType: string
+		lineageTag: 520c21b6-1c45-4cd1-8d53-5f21824d29cf
+		summarizeBy: none
+		sourceColumn: NumeroFacturaCliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sucursal homologada'
+		dataType: string
+		lineageTag: 47cc4e8a-facd-4a61-9df2-3992529460d6
+		summarizeBy: none
+		sourceColumn: Sucursal homologada
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaFacturaCliente
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 47d75c38-b37a-49a8-99ca-d9c8c61825d9
+		summarizeBy: none
+		sourceColumn: FechaFacturaCliente
+
+		variation Variación
+			isDefault
+			relationship: b0ee19af-0c8d-4556-84a7-51fce116339d
+			defaultHierarchy: LocalDateTable_2c9d4cd3-bddb-4b7d-8dfd-05aeaf1929ea.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column TipoVenta
+		dataType: string
+		lineageTag: 98f82ccb-15ff-4823-8db2-98f70f5ba954
+		summarizeBy: none
+		sourceColumn: TipoVenta
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de venta homologado'
+		dataType: string
+		lineageTag: ef10c335-6f7b-4b49-a129-a110ccb85a36
+		summarizeBy: none
+		sourceColumn: Tipo de venta homologado
+
+		annotation SummarizationSetBy = Automatic
+
+	column VMC
+		dataType: string
+		lineageTag: 0addd7ca-602a-42dd-ace1-fb0efccc7a3d
+		summarizeBy: none
+		sourceColumn: VMC
+
+		annotation SummarizationSetBy = Automatic
+
+	column PolMay
+		dataType: string
+		lineageTag: 238ee153-79b6-4f0a-81ea-cacb8e2c7a07
+		summarizeBy: none
+		sourceColumn: PolMay
+
+		annotation SummarizationSetBy = Automatic
+
+	column PrecioRefacciones
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d727f8e-66ad-4511-badf-3e1a71a08dda
+		summarizeBy: sum
+		sourceColumn: PrecioRefacciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column PrecioBase
+		dataType: double
+		lineageTag: 7908c67b-165c-4bfb-a360-aacc1064611c
+		summarizeBy: sum
+		sourceColumn: PrecioBase
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SeguroGratis
+		dataType: string
+		lineageTag: 0aecc4d3-5568-4179-b323-0750db8a80e2
+		summarizeBy: none
+		sourceColumn: SeguroGratis
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaCapturaVenta
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b695ddbc-2a95-419d-87df-127c91fb1ec0
+		summarizeBy: none
+		sourceColumn: FechaCapturaVenta
+
+		variation Variación
+			isDefault
+			relationship: 617b002d-1ab7-4e4d-8722-8336f6e9f02b
+			defaultHierarchy: LocalDateTable_74f5eb79-6e31-4e2a-b9e9-7447b734d6fb.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column CompraOtroDistribuidor
+		dataType: string
+		lineageTag: e3e562b4-ef1f-4f0d-b6ce-b13b5bb8f0f5
+		summarizeBy: none
+		sourceColumn: CompraOtroDistribuidor
+
+		annotation SummarizationSetBy = Automatic
+
+	column Promocion
+		dataType: int64
+		formatString: 0
+		lineageTag: b1f1915b-bd8d-41e4-8e82-0f8fdb645ec9
+		summarizeBy: sum
+		sourceColumn: Promocion
+
+		annotation SummarizationSetBy = Automatic
+
+	column TomaSeminuevo
+		dataType: string
+		lineageTag: df1796b8-f6db-4f2d-a94c-43bf3579bb91
+		summarizeBy: none
+		sourceColumn: TomaSeminuevo
+
+		annotation SummarizationSetBy = Automatic
+
+	column MarcaSeminuevo
+		dataType: string
+		lineageTag: 92b47b11-dada-4773-ac83-9c088f2b0555
+		summarizeBy: none
+		sourceColumn: MarcaSeminuevo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RCN = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("10.10.10.12", "INTELIGENCIA_NEGOCIOS"),
+				    dbo_RCN = Origen{[Schema="dbo",Item="RCN"]}[Data],
+				    #"Filas filtradas" = Table.SelectRows(dbo_RCN, each ([Tipo de venta homologado] <> "Intercambio")),
+				    #"Duplicados quitados" = Table.Distinct(#"Filas filtradas", {"Vin"})
+				in
+				    #"Duplicados quitados"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

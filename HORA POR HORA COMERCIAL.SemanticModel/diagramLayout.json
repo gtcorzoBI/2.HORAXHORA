@@ -1,0 +1,217 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "QINVN",
+          "nodeLineageTag": "574688da-45ea-417c-95fd-9f1aab0f1758",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1207.2819890959213,
+            "y": 197.94978156321852
+          },
+          "nodeIndex": "QVN",
+          "nodeLineageTag": "76763019-c04b-43db-985c-3540a4b31f7b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 616.95714769950166,
+            "y": 472.094439942944
+          },
+          "nodeIndex": "Sucursales",
+          "nodeLineageTag": "820146d5-cb28-48bc-a3bc-efac4e812530",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 516.17436485288772,
+            "y": 100.00846781878207
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "1ed28b05-8134-46e7-ad4f-91e069882458",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 789.28852622354543,
+            "y": 106.36664685764887
+          },
+          "nodeIndex": "CalendarioEntregas",
+          "nodeLineageTag": "c36ce7ae-5676-4268-b623-246471bee383",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 1453.2273956044342,
+            "y": 278.68287522788273
+          },
+          "nodeIndex": "MEDIDAS",
+          "nodeLineageTag": "c2b616ad-6536-45ed-82fd-d3ff825a7d0c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 375.24054121693433
+          },
+          "nodeIndex": "RCN",
+          "nodeLineageTag": "fe8e45bd-7b5c-4727-bac0-b4acb46ad091",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 818.74163911245171,
+            "y": 750.80843536108989
+          },
+          "nodeIndex": "VNDAILY",
+          "nodeLineageTag": "bf31196c-2cc0-48a9-8d4f-1e36021cfcde",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1449.8799367871648,
+            "y": 505.23030427788865
+          },
+          "nodeIndex": "MEDIDAS_DirectQuery",
+          "nodeLineageTag": "fb1c4f9d-fbee-442a-8ecc-cb12b0a05808",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1127.0048177280696,
+            "y": 746.4252712483576
+          },
+          "nodeIndex": "PIPEFYFULL",
+          "nodeLineageTag": "693d23f2-8872-4c91-bcf3-229d26acc0fd",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 411.76744809974821,
+            "y": 742.70553527683046
+          },
+          "nodeIndex": "INVENTARIO_VIVO",
+          "nodeLineageTag": "996ccbf2-8bb2-402b-9211-698a3b32e49f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 794.690257105824
+          },
+          "nodeIndex": "RCN (2)",
+          "nodeLineageTag": "ed8f95c5-0b98-4ace-ba32-4624114c0906",
+          "size": {
+            "height": 301.79858789909213,
+            "width": 234
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 1447.74792359168,
+            "y": 740.629770979557
+          },
+          "nodeIndex": "ventas_diario_quiter",
+          "nodeLineageTag": "d3304c42-ec55-499b-ad3e-7f541f865c66",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 308.87893866498251,
+            "y": 469.03491628730092
+          },
+          "nodeIndex": "QBI VERSION&FAMILIA",
+          "nodeLineageTag": "bf479550-471c-47cf-b010-ba83a14410be",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 418.86246556989977,
+            "y": 1110.1247693683633
+          },
+          "nodeIndex": "Estados Clasificacion",
+          "nodeLineageTag": "906bc16f-7c3b-40d9-9bf4-396756a5169b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 55.599173134922452,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

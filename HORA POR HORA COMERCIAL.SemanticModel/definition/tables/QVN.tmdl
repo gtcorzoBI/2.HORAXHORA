@@ -1,0 +1,593 @@
+table QVN
+	lineageTag: 76763019-c04b-43db-985c-3540a4b31f7b
+
+	column IDV
+		dataType: string
+		lineageTag: 01b1775d-27f3-428d-9376-c323131aef11
+		summarizeBy: none
+		sourceColumn: IDV
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONCESIONARIO
+		dataType: string
+		lineageTag: b65321ea-04a0-405a-8fa3-2996c2a5d6cb
+		summarizeBy: none
+		sourceColumn: CONCESIONARIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUCURSAL
+		dataType: string
+		lineageTag: a7ee64a3-0f33-4ae2-916b-7c5db5fa6a9e
+		summarizeBy: none
+		sourceColumn: SUCURSAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column REFERENCIA
+		dataType: string
+		lineageTag: a10757cd-124f-4939-b8c5-bdfabbdbf61a
+		summarizeBy: none
+		sourceColumn: REFERENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_EMBAJADOR
+		dataType: string
+		lineageTag: 99117654-5074-49cd-9b5e-9361048dd04c
+		summarizeBy: none
+		sourceColumn: NOMBRE_EMBAJADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CABECERA
+		dataType: string
+		lineageTag: 72285a1e-3f3a-4462-a362-e796e4d98b19
+		summarizeBy: none
+		sourceColumn: CABECERA
+
+		annotation SummarizationSetBy = Automatic
+
+	column UNIDAD_TIPO
+		dataType: string
+		lineageTag: 3f809fc8-47f4-4bb5-8e69-47d255be56c1
+		summarizeBy: none
+		sourceColumn: UNIDAD_TIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANIO_MODELO
+		dataType: string
+		lineageTag: b6774d03-53b0-4e10-b693-4c50e790d12a
+		summarizeBy: none
+		sourceColumn: ANIO_MODELO
+
+		annotation SummarizationSetBy = Automatic
+
+	column VIN
+		dataType: string
+		lineageTag: 3d0009ac-4f19-4612-a5a4-f547b723c518
+		summarizeBy: none
+		sourceColumn: VIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUMERO_FACTURA
+		dataType: string
+		lineageTag: 0d98f12f-de6f-4c17-84c5-aaaf3450765d
+		summarizeBy: none
+		sourceColumn: NUMERO_FACTURA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_FACTURA
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 189dd040-0e42-4336-838a-18c85b3e7ea8
+		summarizeBy: none
+		sourceColumn: FECHA_FACTURA
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column FEC_REPORTE_PLANTA
+		dataType: string
+		lineageTag: 38ecb882-5873-4838-92f4-f3979ff8dbe9
+		summarizeBy: none
+		sourceColumn: FEC_REPORTE_PLANTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FEC_ENTREGA
+		dataType: string
+		lineageTag: 5341c107-64c2-4b04-a3c9-12623e07e6eb
+		summarizeBy: none
+		sourceColumn: FEC_ENTREGA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_REPORTE_GTC
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a0950a8e-eecc-4414-af8c-6013ef526973
+		summarizeBy: none
+		sourceColumn: FECHA_REPORTE_GTC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column TIPO_DE_CLIENTE
+		dataType: string
+		lineageTag: 37b051ce-887d-40ff-8758-87b929a74882
+		summarizeBy: none
+		sourceColumn: TIPO_DE_CLIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_DEL_CLIENTE
+		dataType: string
+		lineageTag: 800600db-74d5-4af4-98f5-5a6c5c749f03
+		summarizeBy: none
+		sourceColumn: NOMBRE_DEL_CLIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ORIGEN
+		dataType: string
+		lineageTag: e4108e32-2f61-433b-8b15-546313ec54e9
+		summarizeBy: none
+		sourceColumn: ORIGEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_DE_VENTA
+		dataType: string
+		lineageTag: 4e762a33-a56c-496f-a6cb-4cc7a7d116e6
+		summarizeBy: none
+		sourceColumn: TIPO_DE_VENTA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"QVN","TableItemName":"Grupo Venta","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column METODO_DE_VENTA
+		dataType: string
+		lineageTag: e9282e77-dc8e-40db-9e0e-f4039b0e7380
+		summarizeBy: none
+		sourceColumn: METODO_DE_VENTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NRO_POLIZA
+		dataType: string
+		lineageTag: 6672aad1-41e0-471f-aef8-9409a8243554
+		summarizeBy: none
+		sourceColumn: NRO_POLIZA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DES_TIPO_POLIZA
+		dataType: string
+		lineageTag: 47fce4ed-d905-4a88-86ec-9bfa00433cc7
+		summarizeBy: none
+		sourceColumn: DES_TIPO_POLIZA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TOTAL_FACTURA_CON_IVA
+		dataType: double
+		lineageTag: 81d356f9-4b1e-4310-8145-14d8c9c05a64
+		summarizeBy: sum
+		sourceColumn: TOTAL_FACTURA_CON_IVA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TOTAL_FACTURA_SIN_IVA
+		dataType: double
+		formatString: 0
+		lineageTag: ffb5fcf8-3cc8-41a3-8324-816cc2bbe210
+		summarizeBy: none
+		sourceColumn: TOTAL_FACTURA_SIN_IVA
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	column VALOR_COMPRA
+		dataType: double
+		lineageTag: eaeb546a-3e14-4909-815f-9e5335affec7
+		summarizeBy: sum
+		sourceColumn: VALOR_COMPRA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TIPO_DE_PRECIO
+		dataType: string
+		lineageTag: cf944376-0b89-43d6-8139-0a16df629193
+		summarizeBy: none
+		sourceColumn: TIPO_DE_PRECIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SV_REBATES
+		dataType: double
+		lineageTag: 22ae91cc-a014-4bf5-b114-3d7a87a05100
+		summarizeBy: sum
+		sourceColumn: SV_REBATES
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_REBATES FINANCIERAS'
+		dataType: double
+		lineageTag: a1902475-913d-4fe1-b465-9c273467886b
+		summarizeBy: sum
+		sourceColumn: SV_REBATES FINANCIERAS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_REBATE INTERNO'
+		dataType: double
+		lineageTag: eb18ad16-db1d-4d32-8cd3-4c074da43df6
+		summarizeBy: sum
+		sourceColumn: SV_REBATE INTERNO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_REBATE SICREA'
+		dataType: double
+		lineageTag: 907e134f-fa4c-46e8-90cf-57de5796e042
+		summarizeBy: sum
+		sourceColumn: SV_REBATE SICREA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'IMPUESTO AUTOS NUEVO'
+		dataType: double
+		lineageTag: 5f82d8bb-47d1-4fa1-aadb-f76ebe632e93
+		summarizeBy: sum
+		sourceColumn: IMPUESTO AUTOS NUEVO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SV_SUBSIDIO
+		dataType: double
+		lineageTag: d49219f4-9ea2-40da-befb-71b3eeeac540
+		summarizeBy: sum
+		sourceColumn: SV_SUBSIDIO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'REACONDICINAMIENTO VEHICULOS NUEVOS'
+		dataType: double
+		lineageTag: 96336eb3-bf8f-453d-adc9-f618b36c7f21
+		summarizeBy: sum
+		sourceColumn: REACONDICINAMIENTO VEHICULOS NUEVOS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_PRECIO UNICO'
+		dataType: double
+		lineageTag: 3f1a0252-ed13-4ad5-83b2-d015a5fc9977
+		summarizeBy: sum
+		sourceColumn: SV_PRECIO UNICO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_IMPULSO MERCANTIL'
+		dataType: double
+		lineageTag: ddea2ad3-27a2-43c3-bbfd-82b17cff7d7b
+		summarizeBy: sum
+		sourceColumn: SV_IMPULSO MERCANTIL
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_CDIF. INTERESES CREDITO INTERNO'
+		dataType: double
+		lineageTag: fc7f1845-469d-42fe-ba6f-87868490a903
+		summarizeBy: sum
+		sourceColumn: SV_CDIF. INTERESES CREDITO INTERNO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SV_EXCEDENTE_GASOLINA
+		dataType: double
+		lineageTag: ba55f37a-b2f4-4fe8-8c9b-d58655f58482
+		summarizeBy: sum
+		sourceColumn: SV_EXCEDENTE_GASOLINA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SV_KIT_ENTREGA
+		dataType: double
+		lineageTag: 7e8215f5-115b-4bb5-ac57-922393f7f1d3
+		summarizeBy: sum
+		sourceColumn: SV_KIT_ENTREGA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_TRASLADO UNIDADES Y/O REFACCIONES'
+		dataType: double
+		lineageTag: 5b12ddda-445e-48a9-a705-5f300d452248
+		summarizeBy: sum
+		sourceColumn: SV_TRASLADO UNIDADES Y/O REFACCIONES
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_COSTO FINANCIERO'
+		dataType: double
+		lineageTag: 87d8c6f6-9c69-4f29-a81f-8d52172cde05
+		summarizeBy: sum
+		sourceColumn: SV_COSTO FINANCIERO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_INCENTIVO DEALER'
+		dataType: double
+		lineageTag: 21ba3652-deb7-421d-ab3f-a60a40e9ca30
+		summarizeBy: sum
+		sourceColumn: SV_INCENTIVO DEALER
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SV_UDIS
+		dataType: double
+		lineageTag: 14af959a-0362-4d94-b236-31fe0c1aa312
+		summarizeBy: sum
+		sourceColumn: SV_UDIS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_INCENTIVO DE PENETRACION'
+		dataType: double
+		lineageTag: 05de77c4-71ff-4db1-9c4c-b74b969be174
+		summarizeBy: sum
+		sourceColumn: SV_INCENTIVO DE PENETRACION
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_MONTO A FINANCIAR'
+		dataType: double
+		lineageTag: 220a7be7-e751-49aa-b4ce-ec387157afbb
+		summarizeBy: sum
+		sourceColumn: SV_MONTO A FINANCIAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SV_INCENTIVO A PAGAR'
+		dataType: double
+		lineageTag: 5aa2a1e9-5d34-4fd3-9705-5a47b50ed145
+		summarizeBy: sum
+		sourceColumn: SV_INCENTIVO A PAGAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NOMBRE_MEDIADOR_EXTERNO
+		dataType: string
+		lineageTag: 85028b26-59c1-4e69-a6e9-520de5d29493
+		summarizeBy: none
+		sourceColumn: NOMBRE_MEDIADOR_EXTERNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUMERO_DE_TARJETA
+		dataType: string
+		lineageTag: d1265236-c1c3-4329-827e-5bea3e28f984
+		summarizeBy: none
+		sourceColumn: NUMERO_DE_TARJETA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIMESTAMP
+		dataType: string
+		lineageTag: a074abdc-be49-4df2-8d97-91ffd90e1c9c
+		summarizeBy: none
+		sourceColumn: TIMESTAMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column AGENCIA
+		dataType: string
+		lineageTag: 6d299366-027d-4d33-aec4-317db1604dab
+		summarizeBy: none
+		sourceColumn: AGENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Grupo Venta' =
+			SWITCH(
+				TRUE,
+				ISBLANK('QVN'[TIPO_DE_VENTA]),
+				"(En blanco)",
+				'QVN'[TIPO_DE_VENTA] IN {"VENTA FLOTILLA CONTADO",
+					"VENTA FLOTILLA CREDITO",
+					"VENTA FLOTILLA FINANCIERA MARCA",
+					"VENTA FLOTILLA OTRAS FINANCIERAS"},
+				"FLOTILLA",
+				'QVN'[TIPO_DE_VENTA] IN {"VENTA CONTADO MENUDEO",
+					"VENTA CONTADO MENUDEO SR",
+					"VENTA CONTADO P8",
+					"VENTA CREDITO INTERNO",
+					"VENTA CREDITO MENUDEO",
+					"VENTA DEMO CREDITO",
+					"VENTA DEMO MENUDEO",
+					"VENTA FINANCIERA MARCA MENUDEO",
+					"VENTA OTRAS FINANCIERAS MENUDEO",
+					"Venta Sicrea"},
+				"MENUDEO",
+				'QVN'[TIPO_DE_VENTA]
+			)
+		lineageTag: bde71462-8d57-40b6-8ee4-c8aef4b84a0b
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "QVN"
+				          }
+				        },
+				        "Property": "TIPO_DE_VENTA"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"q","Entity":"QVN"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"q"}},"Property":"TIPO_DE_VENTA"}}],"GroupItems":[{"DisplayName":"(En blanco)","BlankDefaultPlaceholder":true},{"DisplayName":"FLOTILLA","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"q"}},"Property":"TIPO_DE_VENTA"}}],"Values":[[{"Literal":{"Value":"'VENTA FLOTILLA CONTADO'"}}],[{"Literal":{"Value":"'VENTA FLOTILLA CREDITO'"}}],[{"Literal":{"Value":"'VENTA FLOTILLA FINANCIERA MARCA'"}}],[{"Literal":{"Value":"'VENTA FLOTILLA OTRAS FINANCIERAS'"}}]]}}},{"DisplayName":"MENUDEO","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"q"}},"Property":"TIPO_DE_VENTA"}}],"Values":[[{"Literal":{"Value":"'VENTA CONTADO MENUDEO'"}}],[{"Literal":{"Value":"'VENTA CONTADO MENUDEO SR'"}}],[{"Literal":{"Value":"'VENTA CONTADO P8'"}}],[{"Literal":{"Value":"'VENTA CREDITO INTERNO'"}}],[{"Literal":{"Value":"'VENTA CREDITO MENUDEO'"}}],[{"Literal":{"Value":"'VENTA DEMO CREDITO'"}}],[{"Literal":{"Value":"'VENTA DEMO MENUDEO'"}}],[{"Literal":{"Value":"'VENTA FINANCIERA MARCA MENUDEO'"}}],[{"Literal":{"Value":"'VENTA OTRAS FINANCIERAS MENUDEO'"}}],[{"Literal":{"Value":"'Venta Sicrea'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column REF_ABONO
+		dataType: string
+		lineageTag: 41217762-bb0d-4da7-917a-e2b521677df8
+		summarizeBy: none
+		sourceColumn: REF_ABONO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FEC_APERTURA
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: af123a9e-c49e-489d-b003-63d4c76fa123
+		summarizeBy: none
+		sourceColumn: FEC_APERTURA
+
+		variation Variación
+			isDefault
+			relationship: 36db1fe8-ec0f-4447-aa54-1d927a410ae2
+			defaultHierarchy: LocalDateTable_fbb4e342-c98a-4625-b462-34001fb967d4.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CTA_CLIENTE
+		dataType: string
+		lineageTag: 8337f133-c28f-4974-ac37-f2d8c779e09f
+		summarizeBy: none
+		sourceColumn: CTA_CLIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SV_ACCESORIOS
+		dataType: double
+		lineageTag: a37ab6e3-fff6-44e2-90e9-53ee856bcc47
+		summarizeBy: sum
+		sourceColumn: SV_ACCESORIOS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SV_PLACAS
+		dataType: double
+		lineageTag: 33559b54-2b15-4a3f-b235-73c890ada171
+		summarizeBy: sum
+		sourceColumn: SV_PLACAS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SV_TRAMITES
+		dataType: double
+		lineageTag: 09b994ae-8b89-47be-b937-114fa6499f95
+		summarizeBy: sum
+		sourceColumn: SV_TRAMITES
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SV_VERIFICACION
+		dataType: double
+		lineageTag: 755ea5b3-4736-4bc4-a439-afb24411cf6b
+		summarizeBy: sum
+		sourceColumn: SV_VERIFICACION
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SEGURO GRATIS'
+		dataType: double
+		lineageTag: f634be9d-27c0-4f9b-a837-66dfcbc62348
+		summarizeBy: sum
+		sourceColumn: SEGURO GRATIS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FEC_ADJUDICACION
+		dataType: string
+		lineageTag: 23c5dde9-dbbe-4dd3-aa33-de9fb335c356
+		summarizeBy: none
+		sourceColumn: FEC_ADJUDICACION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition QVN = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("10.10.10.12", "INTELIGENCIA_NEGOCIOS"),
+				    dbo_QVN = Origen{[Schema="dbo",Item="QVN"]}[Data],
+				    #"Columna condicional agregada" = Table.AddColumn(dbo_QVN, "AGENCIA", each if [CONCESIONARIO] = "12F" then "FLOTAS CARRANZA" else if [CONCESIONARIO] = "24" then "FLOTAS INFINITI" else if [CONCESIONARIO] = "17" then "INFINITI FORUM" else if [CONCESIONARIO] = "18" then "INFINITI FORUM QUERETARO" else if [CONCESIONARIO] = "21" then "INFINITI QUERETARO" else if [CONCESIONARIO] = "23" then "FLOTAS MG SLP" else if [CONCESIONARIO] = "1" then "MG LOMAS" else if [CONCESIONARIO] = "2" then "MG POLIFORUM" else if [CONCESIONARIO] = "12" then "CARRANZA" else if [CONCESIONARIO] = "11" then "SENDERO" else if [CONCESIONARIO] = "8" then "CENTRO MAX" else if [CONCESIONARIO] = "7" then "INSUR" else if [CONCESIONARIO] = "19" then "FLOTAS BAJIO" else if [CONCESIONARIO] = "22" then "FLOTAS SLP" else if [CONCESIONARIO] = "9" then "FORUM" else if [CONCESIONARIO] = "5F" then "INSUR" else if [CONCESIONARIO] = "6" then "INSUR" else if [CONCESIONARIO] = "16" then "LA JOYA" else if [CONCESIONARIO] = "13" then "LOMAS" else if [CONCESIONARIO] = "15" then "MATEHUALA" else if [CONCESIONARIO] = "10" then "NAVA" else if [CONCESIONARIO] = "14" then "RIOVERDE" else if [CONCESIONARIO] = "5" then "TLALPAN" else if [CONCESIONARIO] = "20" then "SANTA MARIA"  else null)
+				in
+				    #"Columna condicional agregada"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+

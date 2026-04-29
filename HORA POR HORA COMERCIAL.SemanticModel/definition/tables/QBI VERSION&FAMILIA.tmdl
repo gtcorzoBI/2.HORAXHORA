@@ -1,0 +1,32 @@
+table 'QBI VERSION&FAMILIA'
+	lineageTag: bf479550-471c-47cf-b010-ba83a14410be
+
+	column DES_MODELO
+		dataType: string
+		lineageTag: d5297c13-d796-4832-ab83-2050753c1cb1
+		summarizeBy: none
+		sourceColumn: DES_MODELO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FAMILIA
+		dataType: string
+		lineageTag: 7ea96438-c6ed-42f8-9bd7-915a6160fd05
+		summarizeBy: none
+		sourceColumn: FAMILIA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'QBI VERSION&FAMILIA' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("10.10.10.12", "INTELIGENCIA_NEGOCIOS"),
+				    #"QBI_VERSION&FAMILIA" = Origen{[Schema="QBI",Item="VERSION&FAMILIA"]}[Data]
+				in
+				    #"QBI_VERSION&FAMILIA"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

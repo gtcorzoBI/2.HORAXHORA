@@ -1,0 +1,223 @@
+table INVENTARIO_VIVO
+	lineageTag: 996ccbf2-8bb2-402b-9211-698a3b32e49f
+
+	column CONCESIONA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 03bf1d6f-5de6-4615-9cdf-850a60ee42d9
+		summarizeBy: none
+		sourceColumn: CONCESIONA
+
+		annotation SummarizationSetBy = Automatic
+
+	column IDV
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 643e2a58-4ab0-4b8a-8a0f-8c49cec97b06
+		summarizeBy: none
+		sourceColumn: IDV
+
+		annotation SummarizationSetBy = Automatic
+
+	column PEDIDO
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 257b9237-2d71-4ae7-b308-621f784453bb
+		summarizeBy: none
+		sourceColumn: PEDIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column BASTIDOR
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: d361112e-d029-471f-aa6e-98f486dfa842
+		summarizeBy: none
+		sourceColumn: BASTIDOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column FAMILIA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 8e5745be-ff74-4332-a4fd-5bd4489456de
+		summarizeBy: none
+		sourceColumn: FAMILIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column VERSION
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 9990e537-e8b5-4bba-a72d-90e9b28a084c
+		summarizeBy: none
+		sourceColumn: VERSION
+
+		annotation SummarizationSetBy = Automatic
+
+	column AÑO
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: d439a3f0-4776-453a-9d7c-76daa2a1e1d8
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLOR_EXTERIOR
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 9a7ea6a4-24ec-4aab-8ef5-ba93414e5052
+		summarizeBy: none
+		sourceColumn: COLOR_EXTERIOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLOR_INTERIOR
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: f247d30c-4427-4ec0-bd6b-a87194e29430
+		summarizeBy: none
+		sourceColumn: COLOR_INTERIOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column OBSERVACIONES
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 6011e9ad-7d28-41bb-a623-9022cbb4f1fc
+		summarizeBy: none
+		sourceColumn: OBSERVACIONES
+
+		annotation SummarizationSetBy = Automatic
+
+	column F_COMPRA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: f440fadc-138a-403e-b962-7cc38ba3c7d0
+		summarizeBy: none
+		sourceColumn: F_COMPRA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DIAS
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4dcbeb03-4c76-4917-9805-f06e45eacaad
+		summarizeBy: sum
+		sourceColumn: DIAS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PRECIO_COMPRA
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 76d82101-4b0c-466f-a039-b8e1bd67e367
+		summarizeBy: sum
+		sourceColumn: PRECIO_COMPRA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ESTADO
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: e6ad1c2c-da81-4c11-94bd-5e51ab9226fe
+		summarizeBy: none
+		sourceColumn: ESTADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_ACTUALIZACION
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 7dcad25f-f8fa-4c16-b475-74b59faccd2a
+		summarizeBy: none
+		sourceColumn: FECHA_ACTUALIZACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sucursal
+		dataType: string
+		sourceProviderType: varchar(24)
+		lineageTag: eef792cd-e8cf-45bb-a71c-37cd99471b46
+		summarizeBy: none
+		sourceColumn: Sucursal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vin
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 4d2fb7f2-87fb-462f-bfad-90d7c1adf2a9
+		summarizeBy: none
+		sourceColumn: Vin
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESTADO_FINAL
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 0c1fa265-2a94-4745-ad07-c26566f79059
+		summarizeBy: none
+		sourceColumn: ESTADO_FINAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column AÑO_MODELO
+		dataType: string
+		isNullable: false
+		sourceProviderType: varchar(8000)
+		lineageTag: cffc132c-1d8c-4d71-85a5-8700bfc98a0a
+		summarizeBy: none
+		sourceColumn: AÑO_MODELO
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_DIAS
+		dataType: string
+		sourceProviderType: varchar(15)
+		lineageTag: 394a299b-093a-4016-8b01-740c657a4596
+		summarizeBy: none
+		sourceColumn: RANGO_DIAS
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoVenta
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 44609b98-16e2-45b2-b743-1ba999af4355
+		summarizeBy: none
+		sourceColumn: TipoVenta
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha NISSAN'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: fec89408-cba5-45e6-a41d-a6a239ec2b69
+		summarizeBy: none
+		sourceColumn: Fecha NISSAN
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition INVENTARIO_VIVO = m
+		mode: directQuery
+		source =
+				let
+				    Origen = Sql.Database("10.10.10.12", "INTELIGENCIA_NEGOCIOS"),
+				    dbo_INVENTARIO_VIVO = Origen{[Schema="dbo",Item="INVENTARIO_VIVO"]}[Data]
+				in
+				    dbo_INVENTARIO_VIVO
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

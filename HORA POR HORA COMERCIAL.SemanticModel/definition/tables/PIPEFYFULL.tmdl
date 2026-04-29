@@ -1,0 +1,153 @@
+table PIPEFYFULL
+	lineageTag: 693d23f2-8872-4c91-bcf3-229d26acc0fd
+
+	column 'Fase actual'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 873117f5-a9da-4554-8f17-fd28dd9df5bf
+		summarizeBy: none
+		sourceColumn: Fase actual
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre del Negocio'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: a1683edf-9dd1-4f64-ae4e-28644c544261
+		summarizeBy: none
+		sourceColumn: Nombre del Negocio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Agencia Negocio'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 5ce7770e-87ae-4654-939c-c02da4508220
+		summarizeBy: none
+		sourceColumn: Agencia Negocio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de venta'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 7c787ee6-7cfb-4ca6-bca5-4f043f3642fc
+		summarizeBy: none
+		sourceColumn: Tipo de venta
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de solicitud de compra Nissan'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: d2eed263-a87a-4c9d-a256-4fd19db68a08
+		summarizeBy: none
+		sourceColumn: Tipo de solicitud de compra Nissan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Precio'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 7ace7bc4-55b3-4cc3-a192-95bddc9473bb
+		summarizeBy: none
+		sourceColumn: Tipo de Precio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Asignación del VIN'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 8f7494c2-c59a-4a87-a8b1-248f7ecba70a
+		summarizeBy: none
+		sourceColumn: Asignación del VIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Venta de VF3'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: f8185887-bf79-4e04-b5c5-ea0b1cb3d05d
+		summarizeBy: none
+		sourceColumn: Venta de VF3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Venta de STN'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 0f5e2cfa-c20f-488f-9f64-264d9aaf5fa6
+		summarizeBy: none
+		sourceColumn: Venta de STN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Venta de NCF'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 725db38b-7809-48f9-a22c-5fcc1f5b0a22
+		summarizeBy: none
+		sourceColumn: Venta de NCF
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha de reporte GTC'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 78b6b08b-be90-40be-9d16-f2b21a8c2809
+		summarizeBy: none
+		sourceColumn: Fecha de reporte GTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Venta (Pipeline)'
+		dataType: string
+		sourceProviderType: nvarchar(4000)
+		lineageTag: 9f973a69-be81-42c8-ae15-ce2620bef50c
+		summarizeBy: none
+		sourceColumn: Tipo de Venta (Pipeline)
+
+		annotation SummarizationSetBy = Automatic
+
+	column ORDENFASE
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 390c313f-4b31-48ca-8f34-57c45efd3ead
+		summarizeBy: sum
+		sourceColumn: ORDENFASE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUCURSAL
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: 01f4ef8f-9757-4cf5-94a6-3b3cdbd3c1ae
+		summarizeBy: none
+		sourceColumn: SUCURSAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_FACTURA
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 44f03cd3-435a-42e8-96df-baddd80fb7b2
+		summarizeBy: none
+		sourceColumn: FECHA_FACTURA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition PIPEFYFULL = m
+		mode: directQuery
+		source =
+				let
+				    Origen = Sql.Database("10.10.10.12", "INTELIGENCIA_NEGOCIOS"),
+				    dbo_PIPEFYFULL = Origen{[Schema="dbo",Item="PIPEFYFULL"]}[Data]
+				in
+				    dbo_PIPEFYFULL
+
+	annotation PBI_ResultType = Table
+

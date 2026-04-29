@@ -1,0 +1,375 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "42896479d45944869764",
+  "position": {
+    "x": 492.23088923556946,
+    "y": 144.77379095163809,
+    "z": 12000,
+    "height": 187.70670826833074,
+    "width": 787.76911076443059,
+    "tabOrder": 12000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QINVN"
+                    }
+                  },
+                  "Property": "AGENCIA"
+                }
+              },
+              "queryRef": "QINVN.AGENCIA",
+              "nativeQueryRef": "AGENCIA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QINVN"
+                    }
+                  },
+                  "Property": "UNIDAD_TIPO"
+                }
+              },
+              "queryRef": "QINVN.UNIDAD_TIPO",
+              "nativeQueryRef": "MODELO",
+              "displayName": "MODELO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QINVN"
+                    }
+                  },
+                  "Property": "ANIO_MODELO"
+                }
+              },
+              "queryRef": "QINVN.ANIO_MODELO",
+              "nativeQueryRef": "AÑO",
+              "displayName": "AÑO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QINVN"
+                    }
+                  },
+                  "Property": "VIN"
+                }
+              },
+              "queryRef": "QINVN.VIN",
+              "nativeQueryRef": "VIN"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QINVN"
+                    }
+                  },
+                  "Property": "PRECIO_COMPRA_TOTAL"
+                }
+              },
+              "queryRef": "Sum(QINVN.PRECIO_COMPRA_TOTAL)",
+              "nativeQueryRef": "PRECIO_COMPRA_TOTAL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QINVN"
+                    }
+                  },
+                  "Property": "PRECIO_VENTA_TOTAL"
+                }
+              },
+              "queryRef": "Sum(QINVN.PRECIO_VENTA_TOTAL)",
+              "nativeQueryRef": "PRECIO_VENTA_TOTAL"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {}
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'INVENTARIO DESGLOSADO'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": -0.25
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "14f2227fd73ea85e903c",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "inventario_diario_quiter"
+              }
+            },
+            "Property": "VERSION"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "f4a287800e95ee401bd0",
+        "ordinal": 1,
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "inventario_diario_quiter"
+                  }
+                },
+                "Property": "IDV"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "0d01515919ec24409d51",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "inventario_diario_quiter"
+              }
+            },
+            "Property": "AGENCIA"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "ef365dc810a474bcdad4",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "QINVN"
+              }
+            },
+            "Property": "AGENCIA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d64648acf7d97e475eac",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "QINVN"
+              }
+            },
+            "Property": "UNIDAD_TIPO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "085e0eb2064ba4635088",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "QINVN"
+              }
+            },
+            "Property": "VIN"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e03f2829fd5cc01fb27f",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "QINVN"
+              }
+            },
+            "Property": "ANIO_MODELO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

@@ -1,0 +1,7 @@
+role 'CSA CDMX'
+	modelPermission: read
+
+	tablePermission Sucursales = [CSA] == "CDMX"
+
+	annotation PBI_Id = 619c7dac4ed4457f8688bb071d0b55eb
+

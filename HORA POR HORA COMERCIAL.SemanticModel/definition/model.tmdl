@@ -1,0 +1,59 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-MX
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["QINVN","QVN","RCN","VNDAILY","PIPEFYFULL","INVENTARIO_VIVO","RCN (2)","ventas_diario_quiter","QBI VERSION&FAMILIA"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table QINVN
+ref table DateTableTemplate_aa724f46-75e6-474a-986b-e226f4c774e7
+ref table LocalDateTable_d820dcc9-48b0-495e-ad99-42b5cc859030
+ref table LocalDateTable_b4dc32e1-64fd-489b-ac0f-9911b0aa71cc
+ref table QVN
+ref table Sucursales
+ref table Calendario
+ref table CalendarioEntregas
+ref table LocalDateTable_b6922567-0125-48aa-9936-4283ce50058a
+ref table MEDIDAS
+ref table RCN
+ref table LocalDateTable_53710ad3-c566-44a7-9ae3-704806f1575c
+ref table LocalDateTable_7382a5a9-1c55-49e4-a0fd-e75228e9bd41
+ref table LocalDateTable_589d22e8-9e54-40c5-ad25-1de86b54a45d
+ref table LocalDateTable_2c9d4cd3-bddb-4b7d-8dfd-05aeaf1929ea
+ref table LocalDateTable_74f5eb79-6e31-4e2a-b9e9-7447b734d6fb
+ref table VNDAILY
+ref table MEDIDAS_DirectQuery
+ref table PIPEFYFULL
+ref table INVENTARIO_VIVO
+ref table 'RCN (2)'
+ref table LocalDateTable_a13a2ab1-a4d1-4530-ab24-98eb0d0678b1
+ref table LocalDateTable_c4dc57d3-7872-4e21-8f3a-ac661a88c996
+ref table LocalDateTable_74cf515c-1b6c-4343-b79c-917ab5610f35
+ref table LocalDateTable_25fda7ee-7fd2-4e15-81a1-9581613511e0
+ref table LocalDateTable_7fde0bbb-5f39-4053-85d8-81921012b589
+ref table ventas_diario_quiter
+ref table 'QBI VERSION&FAMILIA'
+ref table 'Estados Clasificacion'
+ref table LocalDateTable_fbb4e342-c98a-4625-b462-34001fb967d4
+
+ref role 'CSA BAJIO'
+ref role 'CSA SLP'
+ref role CORPORATIVO
+ref role FORUM
+ref role 'CENTRO MAX'
+ref role 'CSA CDMX'
+ref role CARRANZA
+ref role 'MG LOMAS'
+ref role 'MG POLIFORUM'
+ref role 'CSA MG'
+ref role SENDERO
+
+ref cultureInfo es-MX
+

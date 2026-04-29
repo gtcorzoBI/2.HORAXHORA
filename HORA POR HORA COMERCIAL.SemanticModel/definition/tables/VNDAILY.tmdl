@@ -1,0 +1,661 @@
+table VNDAILY
+	lineageTag: bf31196c-2cc0-48a9-8d4f-1e36021cfcde
+
+	column fecha_reporte_gtc
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 787f3957-d081-4a77-b440-b716764b44cc
+		summarizeBy: none
+		sourceColumn: fecha_reporte_gtc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column adicionales_financiamiento
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 45974316-e7b9-470b-bffa-c6493a8fad0b
+		summarizeBy: sum
+		sourceColumn: adicionales_financiamiento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_factura_con_iva
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b90f1d2d-5742-4a64-a715-613871d9fdcf
+		summarizeBy: sum
+		sourceColumn: total_factura_con_iva
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_factura_sin_iva
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 58bdf6c7-f16c-498e-b0da-7fa90ac12c5f
+		summarizeBy: sum
+		sourceColumn: total_factura_sin_iva
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column valor_compra
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 50042866-e451-4283-9902-e542d9501996
+		summarizeBy: sum
+		sourceColumn: valor_compra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rebates
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9484f49e-05b6-47b4-a162-e01d6ec8a67e
+		summarizeBy: sum
+		sourceColumn: rebates
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rebates_financieras
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9421e22b-a102-4c96-9fc5-578131499ff2
+		summarizeBy: sum
+		sourceColumn: rebates_financieras
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rebate_interno
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1cfa0961-0042-4d7f-b934-d71454ff44e4
+		summarizeBy: sum
+		sourceColumn: rebate_interno
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rebate_sicrea
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 20c50881-273a-43e9-beba-366d77b683b0
+		summarizeBy: sum
+		sourceColumn: rebate_sicrea
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column isan
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a9d64cdf-1ad4-4cca-8859-3858706e7e6f
+		summarizeBy: sum
+		sourceColumn: isan
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column subsidio
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 587ea91c-4e65-4dea-abd8-80ff08328847
+		summarizeBy: sum
+		sourceColumn: subsidio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column costo_acondicionamiento
+		dataType: double
+		sourceProviderType: float
+		lineageTag: fb625fdd-99d4-40cc-9b2b-9395ce85bdee
+		summarizeBy: sum
+		sourceColumn: costo_acondicionamiento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column utilidad_bruta_sin_iva
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8b02a588-3427-465e-8dff-b7f4ea589706
+		summarizeBy: sum
+		sourceColumn: utilidad_bruta_sin_iva
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column precio_uni
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f77dc59a-2dc8-47f0-9f39-fb8b7ca7e2db
+		summarizeBy: sum
+		sourceColumn: precio_uni
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column impulso_mercantil
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3094a0d7-4023-4ec4-8d2c-4ad57906c4b4
+		summarizeBy: sum
+		sourceColumn: impulso_mercantil
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dif_intereses_credito_interno
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c23d490e-6ec1-4b47-8da0-99ff91ae5cda
+		summarizeBy: sum
+		sourceColumn: dif_intereses_credito_interno
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gasolina_excedente
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8e4cab7f-02d9-4e8d-9b5d-4197c3f6b26b
+		summarizeBy: sum
+		sourceColumn: gasolina_excedente
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_gastos_excedentes
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 38e055c3-fc1a-4dfa-8954-01f7f0bcc351
+		summarizeBy: sum
+		sourceColumn: total_gastos_excedentes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column previa
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 16d9ff69-5b88-4792-bd29-66e05cf3c601
+		summarizeBy: sum
+		sourceColumn: previa
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column traslado_unidades_y_o_refacciones
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e2416273-57e2-4455-aca4-4d7e3861209e
+		summarizeBy: sum
+		sourceColumn: traslado_unidades_y_o_refacciones
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column costo_financiero
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 234c8a29-255d-4482-a577-63d0cfd9301a
+		summarizeBy: sum
+		sourceColumn: costo_financiero
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_gastos_autorizados_sin_iva
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 469061c1-ee6f-409c-bbb6-20a81459b963
+		summarizeBy: sum
+		sourceColumn: total_gastos_autorizados_sin_iva
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column utilidad_bruta_total_sin_iva
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 718c6b98-22e2-461a-b6ea-5c3abc05281d
+		summarizeBy: sum
+		sourceColumn: utilidad_bruta_total_sin_iva
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column porcentaje_utilidad
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1081958a-d6b9-44f5-ad28-005552954a6a
+		summarizeBy: sum
+		sourceColumn: porcentaje_utilidad
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column incentivo_dealer
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1642e41b-222c-4535-b8ff-920dc9f3cd17
+		summarizeBy: sum
+		sourceColumn: incentivo_dealer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column monto_a_financiar
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d9de0326-b1df-4e59-86ca-363645ae1e56
+		summarizeBy: sum
+		sourceColumn: monto_a_financiar
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sucursal
+		dataType: string
+		sourceProviderType: varchar(24)
+		lineageTag: 11641f21-515b-41eb-af80-81d6aa41cf37
+		summarizeBy: none
+		sourceColumn: Sucursal
+
+		annotation SummarizationSetBy = Automatic
+
+	column semana_factura
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 856925d4-762c-420f-b138-44c6fa9970c5
+		summarizeBy: sum
+		sourceColumn: semana_factura
+
+		annotation SummarizationSetBy = Automatic
+
+	column semana_reporte_gtc
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c547a02b-f869-434a-9414-b1570c3e64a0
+		summarizeBy: sum
+		sourceColumn: semana_reporte_gtc
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: ef0d8a7a-a446-411b-bab5-844900e66428
+		summarizeBy: none
+		sourceColumn: NOMBRE
+
+		annotation SummarizationSetBy = Automatic
+
+	column REFERENCIA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 347537d2-adc1-40ad-bf4a-375ddbafa424
+		summarizeBy: none
+		sourceColumn: REFERENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_EMBAJADOR_COMERCIAL_VENDEDOR
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: f49b773f-798e-4eee-9393-f31c54055d79
+		summarizeBy: none
+		sourceColumn: NOMBRE_EMBAJADOR_COMERCIAL_VENDEDOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_GERENTE_COMERCIAL
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 725a5776-07ab-4ac0-b827-173fd2790f62
+		summarizeBy: none
+		sourceColumn: NOMBRE_GERENTE_COMERCIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CABECERA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: f9f49cf1-bdd7-4de7-a87b-cdd12af17328
+		summarizeBy: none
+		sourceColumn: CABECERA
+
+		annotation SummarizationSetBy = Automatic
+
+	column UNIDAD_TIPO
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 190fe2f8-9544-4e67-b508-c37954315b37
+		summarizeBy: none
+		sourceColumn: UNIDAD_TIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column VIN
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 11592247-5676-4f33-a7c3-d1f5d673945c
+		summarizeBy: none
+		sourceColumn: VIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROCEDENCIA_O_FILIAL
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 5129c2f2-60f8-4142-8373-9a857b9ea136
+		summarizeBy: none
+		sourceColumn: PROCEDENCIA_O_FILIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_ADJUDICACION
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: ee1624c9-6d9b-4298-ba1a-db6ab9fccbd9
+		summarizeBy: none
+		sourceColumn: FECHA_ADJUDICACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUMERO_DE_FACTURA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: eee79e30-4e11-42eb-9e07-31984a2b81d9
+		summarizeBy: none
+		sourceColumn: NUMERO_DE_FACTURA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_FACTURA
+		dataType: dateTime
+		formatString: Short Date
+		sourceProviderType: date
+		lineageTag: 26d931a6-b5ba-4900-8108-c597fcc24a04
+		summarizeBy: none
+		sourceColumn: FECHA_FACTURA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column FECHA_REPORTE_PLANTA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 093d54cd-7527-4852-bbcc-186f50d79b92
+		summarizeBy: none
+		sourceColumn: FECHA_REPORTE_PLANTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_ENTREGA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: b85dee6c-f66c-4444-a0f6-a4627d5203a8
+		summarizeBy: none
+		sourceColumn: FECHA_ENTREGA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_DE_CLIENTE
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 9cfe176f-21b0-4c47-a01d-edff2dce175d
+		summarizeBy: none
+		sourceColumn: TIPO_DE_CLIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_DEL_CLIENTE
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 2fb25338-ac9f-4084-a332-53062692e04c
+		summarizeBy: none
+		sourceColumn: NOMBRE_DEL_CLIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ORIGEN
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: bcfead41-636d-4e2a-9ea7-5b435b5f34de
+		summarizeBy: none
+		sourceColumn: ORIGEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_DE_VENTA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 117a5088-9d19-4c3e-a9c5-da9cc0b3a540
+		summarizeBy: none
+		sourceColumn: TIPO_DE_VENTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column METODO_DE_VENTA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: f658acd4-ffc0-4c81-a8ec-5c5fb95086a9
+		summarizeBy: none
+		sourceColumn: METODO_DE_VENTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUMERO_DE_CONTRATO_FINANCIERA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: d5673eae-da8e-490b-8f51-4bf66b41d169
+		summarizeBy: none
+		sourceColumn: NUMERO_DE_CONTRATO_FINANCIERA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUMERO_DE_POLIZA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 5478c701-5d2b-4694-8bb3-5b05255c66a6
+		summarizeBy: none
+		sourceColumn: NUMERO_DE_POLIZA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_DE_SEGURO
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 09125bb7-363b-43d1-afbc-37e38447f83d
+		summarizeBy: none
+		sourceColumn: TIPO_DE_SEGURO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPANIA_DE_SEGUROS
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 63f6297a-ca4a-48d6-b78a-b53c4f8a6a59
+		summarizeBy: none
+		sourceColumn: COMPANIA_DE_SEGUROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_DE_PRECIO
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 3690bc69-aa1d-441c-b105-c72feb24ea10
+		summarizeBy: none
+		sourceColumn: TIPO_DE_PRECIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column UDIS
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 084c2ef4-744c-43a0-85ed-9e25698bcc2c
+		summarizeBy: none
+		sourceColumn: UDIS
+
+		annotation SummarizationSetBy = Automatic
+
+	column INCENTIVO_DE_PENETRACION
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 4e582218-104a-4bfe-bc88-3dcd94152bae
+		summarizeBy: none
+		sourceColumn: INCENTIVO_DE_PENETRACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column INCENTIVO_A_PAGAR
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 987cf945-435f-4cf3-9494-b7bdc570e352
+		summarizeBy: none
+		sourceColumn: INCENTIVO_A_PAGAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_PROMOTOR_DIGITAL
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 91f60be2-54d0-4737-952c-ec6518625ad1
+		summarizeBy: none
+		sourceColumn: NOMBRE_PROMOTOR_DIGITAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_MEDIADOR_EXTERNO
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 6f93496a-91a7-416a-ae29-0a67edfccfa2
+		summarizeBy: none
+		sourceColumn: NOMBRE_MEDIADOR_EXTERNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUMERO_DE_TARJETA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 2a672e7c-e9e0-441b-a756-9b85e11a9983
+		summarizeBy: none
+		sourceColumn: NUMERO_DE_TARJETA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MEDIACION_EXTERNOS
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 91b6e9fb-5855-46e9-9eae-24b28d78a765
+		summarizeBy: none
+		sourceColumn: MEDIACION_EXTERNOS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODIGO_PROMOTOR_MEDIADOR
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 2811d96f-7d3d-4ba9-b95e-30125389c6d8
+		summarizeBy: none
+		sourceColumn: CODIGO_PROMOTOR_MEDIADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPEDIENTE_INCOMPLETO
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 501e571e-0dae-4ba2-92c7-54e5b50df800
+		summarizeBy: none
+		sourceColumn: EXPEDIENTE_INCOMPLETO
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_DE_CARGA
+		dataType: string
+		sourceProviderType: varchar(255)
+		lineageTag: 42087e03-0fd0-4013-a2b1-fde6b9fd5677
+		summarizeBy: none
+		sourceColumn: TIPO_DE_CARGA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPOVENTA
+		dataType: string
+		isNullable: false
+		sourceProviderType: varchar(8)
+		lineageTag: 328f6525-90f2-4773-b48f-6520f18e8f96
+		summarizeBy: none
+		sourceColumn: TIPOVENTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column AÑO_MODELO
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 32cd40e2-2ed3-402e-978f-7458a5d39b94
+		summarizeBy: none
+		sourceColumn: AÑO_MODELO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_ACTUALIZACION
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 400d8ccf-6564-475a-b973-7e0e1d50aa26
+		summarizeBy: none
+		sourceColumn: FECHA_ACTUALIZACION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition VNDAILY = m
+		mode: directQuery
+		source =
+				let
+				    Origen = Sql.Database("10.10.10.12", "INTELIGENCIA_NEGOCIOS"),
+				    dbo_VNDAILY = Origen{[Schema="dbo",Item="VNDAILY"]}[Data]
+				in
+				    dbo_VNDAILY
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

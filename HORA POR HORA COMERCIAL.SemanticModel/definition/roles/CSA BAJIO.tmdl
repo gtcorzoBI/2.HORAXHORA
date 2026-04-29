@@ -1,0 +1,7 @@
+role 'CSA BAJIO'
+	modelPermission: read
+
+	tablePermission Sucursales = [CSA] == "BAJIO"
+
+	annotation PBI_Id = 6471a38690e34921b9f894d890297da5
+

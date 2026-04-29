@@ -1,0 +1,160 @@
+table Sucursales
+	lineageTag: 820146d5-cb28-48bc-a3bc-efac4e812530
+
+	column Sucursal
+		lineageTag: d90f3051-f3be-4276-aa86-8fe9fee2fd69
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Sucursal]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Sucursales","TableItemName":"CSA","ObjectType":4},"LinkType":"UsedInGroup"},{"LinkTarget":{"TableName":"Sucursales","TableItemName":"MARCA","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column CSA =
+			SWITCH(
+				TRUE,
+				ISBLANK('Sucursales'[Sucursal]),
+				"(En blanco)",
+				'Sucursales'[Sucursal] IN {"CENTRO MAX",
+					"FLOTAS BAJIO",
+					"FORUM",
+					"INFINITI FORUM",
+					"INFINITI FORUM QUERETARO"},
+				"BAJIO",
+				'Sucursales'[Sucursal] IN {"FLOTAS SLP",
+					"INSUR",
+					"LA JOYA",
+					"TLALPAN"},
+				"CDMX",
+				'Sucursales'[Sucursal] IN {"FLOTAS MG SLP",
+					"MG LOMAS",
+					"MG POLIFORUM"},
+				"MG",
+				'Sucursales'[Sucursal] IN {"CARRANZA",
+					"FLOTAS CARRANZA",
+					"FLOTAS INFINITI",
+					"INFINITI QUERETARO",
+					"LOMAS",
+					"MATEHUALA",
+					"NAVA",
+					"RIOVERDE",
+					"SANTA MARIA",
+					"SENDERO"},
+				"SLP",
+				'Sucursales'[Sucursal]
+			)
+		lineageTag: 87eea390-b21b-43af-bda6-0f246978dae3
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Sucursales"
+				          }
+				        },
+				        "Property": "Sucursal"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"s","Entity":"Sucursales"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"GroupItems":[{"DisplayName":"(En blanco)","BlankDefaultPlaceholder":true},{"DisplayName":"BAJIO","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"Values":[[{"Literal":{"Value":"'CENTRO MAX'"}}],[{"Literal":{"Value":"'FLOTAS BAJIO'"}}],[{"Literal":{"Value":"'FORUM'"}}],[{"Literal":{"Value":"'INFINITI FORUM'"}}],[{"Literal":{"Value":"'INFINITI FORUM QUERETARO'"}}]]}}},{"DisplayName":"CDMX","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"Values":[[{"Literal":{"Value":"'FLOTAS SLP'"}}],[{"Literal":{"Value":"'INSUR'"}}],[{"Literal":{"Value":"'LA JOYA'"}}],[{"Literal":{"Value":"'TLALPAN'"}}]]}}},{"DisplayName":"MG","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"Values":[[{"Literal":{"Value":"'FLOTAS MG SLP'"}}],[{"Literal":{"Value":"'MG LOMAS'"}}],[{"Literal":{"Value":"'MG POLIFORUM'"}}]]}}},{"DisplayName":"SLP","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"Values":[[{"Literal":{"Value":"'CARRANZA'"}}],[{"Literal":{"Value":"'FLOTAS CARRANZA'"}}],[{"Literal":{"Value":"'FLOTAS INFINITI'"}}],[{"Literal":{"Value":"'INFINITI QUERETARO'"}}],[{"Literal":{"Value":"'LOMAS'"}}],[{"Literal":{"Value":"'MATEHUALA'"}}],[{"Literal":{"Value":"'NAVA'"}}],[{"Literal":{"Value":"'RIOVERDE'"}}],[{"Literal":{"Value":"'SANTA MARIA'"}}],[{"Literal":{"Value":"'SENDERO'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	column MARCA =
+			SWITCH(
+				TRUE,
+				ISBLANK('Sucursales'[Sucursal]),
+				"(En blanco)",
+				'Sucursales'[Sucursal] IN {"FLOTAS INFINITI",
+					"INFINITI FORUM",
+					"INFINITI FORUM QUERETARO",
+					"INFINITI QUERETARO"},
+				"INFINITI",
+				'Sucursales'[Sucursal] IN {"FLOTAS MG SLP",
+					"MG LOMAS",
+					"MG POLIFORUM"},
+				"MG",
+				'Sucursales'[Sucursal] IN {"CARRANZA",
+					"CENTRO MAX",
+					"FLOTAS BAJIO",
+					"FLOTAS CARRANZA",
+					"FLOTAS SLP",
+					"FORUM",
+					"INSUR",
+					"LA JOYA",
+					"LOMAS",
+					"MATEHUALA",
+					"NAVA",
+					"RIOVERDE",
+					"SANTA MARIA",
+					"SENDERO",
+					"TLALPAN"},
+				"NISSAN",
+				'Sucursales'[Sucursal]
+			)
+		lineageTag: 3ca0998e-db0c-410e-b391-963d030da375
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Sucursales"
+				          }
+				        },
+				        "Property": "Sucursal"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"s","Entity":"Sucursales"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"GroupItems":[{"DisplayName":"(En blanco)","BlankDefaultPlaceholder":true},{"DisplayName":"INFINITI","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"Values":[[{"Literal":{"Value":"'FLOTAS INFINITI'"}}],[{"Literal":{"Value":"'INFINITI FORUM'"}}],[{"Literal":{"Value":"'INFINITI FORUM QUERETARO'"}}],[{"Literal":{"Value":"'INFINITI QUERETARO'"}}]]}}},{"DisplayName":"MG","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"Values":[[{"Literal":{"Value":"'FLOTAS MG SLP'"}}],[{"Literal":{"Value":"'MG LOMAS'"}}],[{"Literal":{"Value":"'MG POLIFORUM'"}}]]}}},{"DisplayName":"NISSAN","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"s"}},"Property":"Sucursal"}}],"Values":[[{"Literal":{"Value":"'CARRANZA'"}}],[{"Literal":{"Value":"'CENTRO MAX'"}}],[{"Literal":{"Value":"'FLOTAS BAJIO'"}}],[{"Literal":{"Value":"'FLOTAS CARRANZA'"}}],[{"Literal":{"Value":"'FLOTAS SLP'"}}],[{"Literal":{"Value":"'FORUM'"}}],[{"Literal":{"Value":"'INSUR'"}}],[{"Literal":{"Value":"'LA JOYA'"}}],[{"Literal":{"Value":"'LOMAS'"}}],[{"Literal":{"Value":"'MATEHUALA'"}}],[{"Literal":{"Value":"'NAVA'"}}],[{"Literal":{"Value":"'RIOVERDE'"}}],[{"Literal":{"Value":"'SANTA MARIA'"}}],[{"Literal":{"Value":"'SENDERO'"}}],[{"Literal":{"Value":"'TLALPAN'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sucursales = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "Sucursal", STRING,
+				    {
+				    {"FLOTAS CARRANZA"},
+				    {"FLOTAS INFINITI"},
+				    {"INFINITI FORUM"},
+				    {"INFINITI FORUM QUERETARO"},
+				    {"INFINITI QUERETARO"},
+				    {"FLOTAS MG SLP"},
+				    {"MG LOMAS"},
+				    {"MG POLIFORUM"},
+				    {"CARRANZA"},
+				    {"SENDERO"},
+				    {"CENTRO MAX"},
+				    {"INSUR"},
+				    {"FLOTAS BAJIO"},
+				    {"FLOTAS SLP"},
+				    {"FORUM"},
+				    {"LA JOYA"},
+				    {"LOMAS"},
+				    {"MATEHUALA"},
+				    {"NAVA"},
+				    {"RIOVERDE"},
+				    {"TLALPAN"},
+				    {"SANTA MARIA"}
+				    }
+				)
+
+	annotation PBI_Id = 79783356198345659f120dc3db387db1
+

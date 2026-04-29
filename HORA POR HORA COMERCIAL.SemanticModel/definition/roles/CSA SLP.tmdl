@@ -1,0 +1,7 @@
+role 'CSA SLP'
+	modelPermission: read
+
+	tablePermission Sucursales = [CSA] == "SLP"
+
+	annotation PBI_Id = 75753221aa074dbcb432443286f068c9
+

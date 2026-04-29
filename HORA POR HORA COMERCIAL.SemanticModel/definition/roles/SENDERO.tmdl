@@ -1,0 +1,7 @@
+role SENDERO
+	modelPermission: read
+
+	tablePermission Sucursales = [Sucursal] == "SENDERO" || [Sucursal] == "INFINITI QUERETARO"
+
+	annotation PBI_Id = f589f6e1844d4c2ea6227c08408dac18
+

@@ -1,0 +1,29 @@
+table 'Estados Clasificacion'
+	lineageTag: 906bc16f-7c3b-40d9-9bf4-396756a5169b
+
+	column Estado
+		lineageTag: e1930439-8fe8-4b9f-92fe-340f4f05ded9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Estado]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Estados Clasificacion' = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "Estado", STRING,
+				    {
+				        {"ABONO INVENTARIO VN"},
+				        {"DEMO"},
+				        {"FLOTAS"},
+				        {"INMOVILIZADO"},
+				        {"INVENTARIO VN"},
+				        {"P8"}
+				    }
+				)
+
+	annotation PBI_Id = 202f69a826bb4c8f9fdd3bc2982b3a03
+

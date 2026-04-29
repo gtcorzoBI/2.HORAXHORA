@@ -1,0 +1,96 @@
+table CalendarioEntregas
+	lineageTag: c36ce7ae-5676-4268-b623-246471bee383
+
+	column Date
+		formatString: General Date
+		lineageTag: ca159a91-0608-4313-b054-bbf476339169
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variación
+			isDefault
+			relationship: 917e7fe8-5122-4b0b-8c08-94148d9d53a6
+			defaultHierarchy: LocalDateTable_b6922567-0125-48aa-9936-4283ce50058a.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		formatString: 0
+		lineageTag: 8738f44a-9404-4943-bfa4-6a9b829dd9d2
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Año]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		lineageTag: 7e797426-805e-4b70-acc7-5020cbedc6dc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes]
+		sortByColumn: 'Mes N°'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mes N°'
+		formatString: 0
+		lineageTag: ccf938c5-c900-4b30-9e50-237b57c201f3
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mes N°]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: 877c04b9-4be4-4660-bbdb-1ba4f7d232c4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Día
+		formatString: 0
+		lineageTag: 2036108b-62c2-4d6b-a6d7-ac2e9c14c29f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Día]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Día Semana'
+		lineageTag: 00369bf3-3af6-473d-94ae-e3753184e72f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Día Semana]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Número Semana'
+		formatString: 0
+		lineageTag: 2e5eb8f0-ba08-4608-9f7d-af409c5d2e3b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Número Semana]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CalendarioEntregas = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS (
+				    CALENDAR (DATE(2024, 1, 1), TODAY()), 
+				    "Año", YEAR([Date]),
+				    "Mes", FORMAT([Date], "MMMM"),
+				    "Mes N°", MONTH([Date]),
+				    "Trimestre", "Q" & FORMAT([Date], "Q"),
+				    "Día", DAY([Date]),
+				    "Día Semana", FORMAT([Date], "dddd"),
+				    "Número Semana", WEEKNUM([Date])
+				)
+				```
+
+	annotation PBI_Id = 65407feb1f744130a31edeae81ca1a4d
+

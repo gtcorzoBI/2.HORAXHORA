@@ -1,0 +1,7 @@
+role 'MG POLIFORUM'
+	modelPermission: read
+
+	tablePermission Sucursales = [Sucursal] == "MG POLIFORUM"
+
+	annotation PBI_Id = ffb5d68a00af4db1952c72dddc4aeaa5
+

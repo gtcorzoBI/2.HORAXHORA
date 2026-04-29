@@ -1,0 +1,46 @@
+table MEDIDAS_DirectQuery
+	lineageTag: fb1c4f9d-fbee-442a-8ecc-cb12b0a05808
+
+	measure D_FACTURA = SUM(VNDAILY[total_factura_sin_iva])
+		lineageTag: 4b00a232-78b8-4ecc-a38f-2e025afcea44
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'PY D_FACTURA' =
+			
+			
+			CALCULATE([D_FACTURA],SAMEPERIODLASTYEAR(Calendario[Date]))
+		lineageTag: ba2ed3bf-93d3-486e-bc12-9f3bf653c9dc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure D_UTILIDAD = SUM(VNDAILY[utilidad_bruta_total_sin_iva])
+		lineageTag: 3c8842cc-3d0a-42eb-9d8f-c160026185e5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure PYD_UTILIDAD =
+			
+			
+			CALCULATE([D_UTILIDAD],SAMEPERIODLASTYEAR(Calendario[Date]))
+		lineageTag: bcc702e1-dc1d-43ec-baaa-7516f379a4c3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure RangoFechasInv = SWITCH(SELECTEDVALUE(INVENTARIO_VIVO[DIAS]), >90, ">90" )
+		lineageTag: ff9ca774-1a67-4658-8e2d-caec6dc1a732
+
+	column Value
+		lineageTag: 23e98e52-a3a9-4740-848f-9f21fdf05f6f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MEDIDAS_DirectQuery = calculated
+		mode: import
+		source = {""}
+
+	annotation PBI_Id = 1cace600b44749728a07a1d9d3a27a69
+

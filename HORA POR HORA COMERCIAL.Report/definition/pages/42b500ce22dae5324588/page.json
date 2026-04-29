@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "42b500ce22dae5324588",
+  "displayName": "SABANA ENTREGA GTC DIA CERRADO",
+  "displayOption": "ActualSize",
+  "height": 720,
+  "width": 1480,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6a264d54418dec55956d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "QVN"
+              }
+            },
+            "Property": "TIPO_DE_VENTA"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ]
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "335L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
