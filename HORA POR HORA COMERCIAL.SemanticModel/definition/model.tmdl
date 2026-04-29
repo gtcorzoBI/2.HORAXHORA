@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["QINVN","QVN","RCN","VNDAILY","PIPEFYFULL","INVENTARIO_VIVO","RCN (2)","ventas_diario_quiter","QBI VERSION&FAMILIA"]
+annotation PBI_QueryOrder = ["QINVN","QVN","RCN","VNDAILY","PIPEFYFULL","INVENTARIO_VIVO","RCN (2)","ventas_diario_quiter","QBI VERSION&FAMILIA","incaqvo"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -42,6 +42,10 @@ ref table ventas_diario_quiter
 ref table 'QBI VERSION&FAMILIA'
 ref table 'Estados Clasificacion'
 ref table LocalDateTable_fbb4e342-c98a-4625-b462-34001fb967d4
+ref table incaqvo
+ref table LocalDateTable_e259ef0c-07aa-45f9-9a01-b4c2e8155ac1
+ref table LocalDateTable_ae54cd73-6ac7-4431-9a3c-3daca5b9ce4c
+ref table LocalDateTable_96952624-00ca-44dc-8206-1bf29d8d725c
 
 ref role 'CSA BAJIO'
 ref role 'CSA SLP'
