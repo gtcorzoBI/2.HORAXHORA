@@ -88,27 +88,41 @@ table QVN
 		summarizeBy: none
 		sourceColumn: FECHA_FACTURA
 
-		changedProperty = DataType
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
 	column FEC_REPORTE_PLANTA
-		dataType: string
+		dataType: dateTime
+		formatString: Long Date
 		lineageTag: 38ecb882-5873-4838-92f4-f3979ff8dbe9
 		summarizeBy: none
 		sourceColumn: FEC_REPORTE_PLANTA
 
+		variation Variación
+			isDefault
+			relationship: a7079bda-50c7-4b50-99ad-4edbb9419392
+			defaultHierarchy: LocalDateTable_348af6a4-bd22-4d4d-9e54-716db4c2a924.'Jerarquía de fechas'
+
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column FEC_ENTREGA
-		dataType: string
+		dataType: dateTime
+		formatString: Long Date
 		lineageTag: 5341c107-64c2-4b04-a3c9-12623e07e6eb
 		summarizeBy: none
 		sourceColumn: FEC_ENTREGA
 
+		variation Variación
+			isDefault
+			relationship: 7d9c3109-a5c3-47d9-bb58-57a5340dc96f
+			defaultHierarchy: LocalDateTable_3d3fa73a-8a8f-4072-a67d-e07a22854fef.'Jerarquía de fechas'
+
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column FECHA_REPORTE_GTC
 		dataType: dateTime
@@ -116,6 +130,11 @@ table QVN
 		lineageTag: a0950a8e-eecc-4414-af8c-6013ef526973
 		summarizeBy: none
 		sourceColumn: FECHA_REPORTE_GTC
+
+		variation Variación
+			isDefault
+			relationship: 3747581b-eb1c-4437-bb84-a4915289f952
+			defaultHierarchy: LocalDateTable_8988b136-b4b6-40b0-b447-49d8b4e5673f.'Jerarquía de fechas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -585,15 +604,25 @@ table QVN
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'GRUPO DE VENTAS'
+		dataType: string
+		lineageTag: 712123c7-633b-4be3-83d8-5b5c727030bc
+		summarizeBy: none
+		sourceColumn: GRUPO DE VENTAS
+
+		annotation SummarizationSetBy = Automatic
+
 	partition QVN = m
 		mode: import
 		source =
 				let
 				    Origen = Sql.Database("10.10.10.12", "INTELIGENCIA_NEGOCIOS"),
 				    dbo_QVN = Origen{[Schema="dbo",Item="QVN"]}[Data],
-				    #"Columna condicional agregada" = Table.AddColumn(dbo_QVN, "AGENCIA", each if [CONCESIONARIO] = "12F" then "FLOTAS CARRANZA" else if [CONCESIONARIO] = "24" then "FLOTAS INFINITI" else if [CONCESIONARIO] = "17" then "INFINITI FORUM" else if [CONCESIONARIO] = "18" then "INFINITI FORUM QUERETARO" else if [CONCESIONARIO] = "21" then "INFINITI QUERETARO" else if [CONCESIONARIO] = "23" then "FLOTAS MG SLP" else if [CONCESIONARIO] = "1" then "MG LOMAS" else if [CONCESIONARIO] = "2" then "MG POLIFORUM" else if [CONCESIONARIO] = "12" then "CARRANZA" else if [CONCESIONARIO] = "11" then "SENDERO" else if [CONCESIONARIO] = "8" then "CENTRO MAX" else if [CONCESIONARIO] = "7" then "INSUR" else if [CONCESIONARIO] = "19" then "FLOTAS BAJIO" else if [CONCESIONARIO] = "22" then "FLOTAS SLP" else if [CONCESIONARIO] = "9" then "FORUM" else if [CONCESIONARIO] = "5F" then "INSUR" else if [CONCESIONARIO] = "6" then "INSUR" else if [CONCESIONARIO] = "16" then "LA JOYA" else if [CONCESIONARIO] = "13" then "LOMAS" else if [CONCESIONARIO] = "15" then "MATEHUALA" else if [CONCESIONARIO] = "10" then "NAVA" else if [CONCESIONARIO] = "14" then "RIOVERDE" else if [CONCESIONARIO] = "5" then "TLALPAN" else if [CONCESIONARIO] = "20" then "SANTA MARIA"  else null)
+				    #"Columna condicional agregada" = Table.AddColumn(dbo_QVN, "AGENCIA", each if [CONCESIONARIO] = "12F" then "FLOTAS CARRANZA" else if [CONCESIONARIO] = "24" then "FLOTAS INFINITI" else if [CONCESIONARIO] = "17" then "INFINITI FORUM" else if [CONCESIONARIO] = "18" then "INFINITI FORUM QUERETARO" else if [CONCESIONARIO] = "21" then "INFINITI QUERETARO" else if [CONCESIONARIO] = "23" then "FLOTAS MG SLP" else if [CONCESIONARIO] = "1" then "MG LOMAS" else if [CONCESIONARIO] = "2" then "MG POLIFORUM" else if [CONCESIONARIO] = "12" then "CARRANZA" else if [CONCESIONARIO] = "11" then "SENDERO" else if [CONCESIONARIO] = "8" then "CENTRO MAX" else if [CONCESIONARIO] = "7" then "INSUR" else if [CONCESIONARIO] = "19" then "FLOTAS BAJIO" else if [CONCESIONARIO] = "22" then "FLOTAS SLP" else if [CONCESIONARIO] = "9" then "FORUM" else if [CONCESIONARIO] = "5F" then "INSUR" else if [CONCESIONARIO] = "6" then "INSUR" else if [CONCESIONARIO] = "16" then "LA JOYA" else if [CONCESIONARIO] = "13" then "LOMAS" else if [CONCESIONARIO] = "15" then "MATEHUALA" else if [CONCESIONARIO] = "10" then "NAVA" else if [CONCESIONARIO] = "14" then "RIOVERDE" else if [CONCESIONARIO] = "5" then "TLALPAN" else if [CONCESIONARIO] = "20" then "SANTA MARIA"  else null),
+				    #"Columna condicional agregada1" = Table.AddColumn(#"Columna condicional agregada", "GRUPO DE VENTAS", each if [TIPO_DE_VENTA] = "ABONO VENTA DEMO CREDITO" then "OTRO" else if [TIPO_DE_VENTA] = "PASO DE DEMO VN  A VU GARANTIZADOS" then "OTRO" else if [TIPO_DE_VENTA] = "PASO DE VN A ACTIVO" then "OTRO" else if [TIPO_DE_VENTA] = "PASO DE VN A DEMO" then "OTRO" else if [TIPO_DE_VENTA] = "VENTA CONTADO MENUDEO" then "MENUDEO" else if [TIPO_DE_VENTA] = "VENTA CONTADO MENUDEO SR" then "MENUDEO" else if [TIPO_DE_VENTA] = "VENTA CONTADO P8" then "MENUDEO" else if [TIPO_DE_VENTA] = "VENTA CREDITO INTERNO" then "MENUDEO" else if [TIPO_DE_VENTA] = "VENTA CREDITO MENUDEO" then "MENUDEO" else if [TIPO_DE_VENTA] = "VENTA DEMO CREDITO" then "MENUDEO" else if [TIPO_DE_VENTA] = "VENTA DEMO MENUDEO" then "MENUDEO" else if [TIPO_DE_VENTA] = "VENTA FINANCIERA MARCA MENUDEO" then "MENUDEO" else if [TIPO_DE_VENTA] = "VENTA FLOTILLA CONTADO" then "FLOTILLA" else if [TIPO_DE_VENTA] = "VENTA FLOTILLA CREDITO" then "FLOTILLA" else if [TIPO_DE_VENTA] = "VENTA FLOTILLA FINANCIERA MARCA" then "FLOTILLA" else if [TIPO_DE_VENTA] = "VENTA FLOTILLA OTRAS FINANCIERAS" then "FLOTILLA" else if [TIPO_DE_VENTA] = "VENTA INTERCAMBIO OTROS DISTRIBUIDORES MENUDEO" then "OTRO" else if [TIPO_DE_VENTA] = "VENTA INTERCAMBIO PARTES RELACIONADAS MENUDEO" then "OTRO" else if [TIPO_DE_VENTA] = "VENTA OTRAS FINANCIERAS MENUDEO" then "MENUDEO" else if [TIPO_DE_VENTA] = "Venta Sicrea" then "MENUDEO" else null),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Columna condicional agregada1",{{"FEC_ENTREGA", type date}, {"FEC_REPORTE_PLANTA", type date}, {"FECHA_FACTURA", type date}})
 				in
-				    #"Columna condicional agregada"
+				    #"Tipo cambiado"
 
 	annotation PBI_ResultType = Table
 

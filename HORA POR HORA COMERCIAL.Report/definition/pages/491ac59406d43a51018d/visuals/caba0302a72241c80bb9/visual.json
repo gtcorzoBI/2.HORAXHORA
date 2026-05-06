@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "caba0302a72241c80bb9",
   "position": {
-    "x": 480.63725490196077,
-    "y": 499.68137254901956,
-    "z": 22000,
-    "height": 42.622549019607838,
-    "width": 91.593137254901961,
-    "tabOrder": 21000
+    "x": 477.5,
+    "y": 498.33333333333337,
+    "z": 19000,
+    "height": 41.666666666666671,
+    "width": 90.833333333333343,
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "card",
@@ -22,17 +22,17 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "QVN"
+                          "Entity": "REF QVN REPORTE GTC"
                         }
                       },
-                      "Property": "VIN"
+                      "Property": "IDV"
                     }
                   },
                   "Function": 5
                 }
               },
-              "queryRef": "Min(QVN.VIN)",
-              "nativeQueryRef": "Recuento de VIN"
+              "queryRef": "Min(REF QVN REPORTE GTC.IDV)",
+              "nativeQueryRef": "Recuento de IDV"
             }
           ]
         }
@@ -46,10 +46,10 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "QVN"
+                        "Entity": "REF QVN REPORTE GTC"
                       }
                     },
-                    "Property": "VIN"
+                    "Property": "IDV"
                   }
                 },
                 "Function": 5
@@ -186,5 +186,28 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1ce5810749d859050ca9",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "REF QVN REPORTE GTC"
+                  }
+                },
+                "Property": "IDV"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

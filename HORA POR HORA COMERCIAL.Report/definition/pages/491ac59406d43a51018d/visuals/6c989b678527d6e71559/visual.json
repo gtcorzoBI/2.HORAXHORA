@@ -4,10 +4,10 @@
   "position": {
     "x": 200,
     "y": 542.85714285714289,
-    "z": 7000,
+    "z": 5000,
     "height": 177.14285714285717,
     "width": 381.42857142857144,
-    "tabOrder": 7000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -20,29 +20,29 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "CalendarioEntregas"
+                      "Entity": "Calendario"
                     }
                   },
                   "Property": "Mes"
                 }
               },
-              "queryRef": "CalendarioEntregas.Mes",
-              "nativeQueryRef": "Mes",
-              "active": true
+              "queryRef": "Calendario.Mes",
+              "nativeQueryRef": "Mes1",
+              "active": false
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "CalendarioEntregas"
+                      "Entity": "Calendario"
                     }
                   },
                   "Property": "Número Semana"
                 }
               },
-              "queryRef": "CalendarioEntregas.Número Semana",
-              "nativeQueryRef": "Número Semana",
+              "queryRef": "Calendario.Número Semana",
+              "nativeQueryRef": "Número Semana1",
               "active": true
             }
           ]
@@ -56,17 +56,17 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "QVN"
+                          "Entity": "REF QVN REPORTE GTC"
                         }
                       },
-                      "Property": "VIN"
+                      "Property": "IDV"
                     }
                   },
                   "Function": 5
                 }
               },
-              "queryRef": "CountNonNull(QVN.VIN)",
-              "nativeQueryRef": "VIN"
+              "queryRef": "CountNonNull(REF QVN REPORTE GTC.IDV)",
+              "nativeQueryRef": "IDV"
             }
           ]
         }
@@ -130,101 +130,6 @@
                 }
               }
             }
-          }
-        }
-      ],
-      "referenceLine": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "displayName": {
-              "expr": {
-                "Literal": {
-                  "Value": "'PROMEDIO DE VENTA'"
-                }
-              }
-            },
-            "value": {
-              "expr": {
-                "Aggregation": {
-                  "Expression": {
-                    "SelectRef": {
-                      "ExpressionName": "CountNonNull(QVN.VIN)"
-                    }
-                  },
-                  "Function": 6
-                }
-              }
-            },
-            "lineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 4,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "autoScale": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "5D"
-                }
-              }
-            },
-            "shadeShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "dataLabelShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "dataLabelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 4,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "dataLabelHorizontalPosition": {
-              "expr": {
-                "Literal": {
-                  "Value": "'right'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "CountNonNull(QVN.VIN)",
-            "id": "1"
           }
         }
       ],
@@ -426,5 +331,56 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "13bedd4dbe0ca8578c74",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendario"
+              }
+            },
+            "Property": "Mes"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5d05e910ea1e0010574e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendario"
+              }
+            },
+            "Property": "Número Semana"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f410ddf02288ca0e39ac",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "REF QVN REPORTE GTC"
+                  }
+                },
+                "Property": "IDV"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

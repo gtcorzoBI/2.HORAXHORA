@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "CY25SU11",
@@ -14,27 +14,15 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "8b52b8f0531a5dbd725d",
+        "name": "5ba98720a061101dae6c",
         "field": {
-          "GroupRef": {
+          "Column": {
             "Expression": {
               "SourceRef": {
                 "Entity": "QVN"
               }
             },
-            "Property": "Grupo Venta",
-            "GroupedColumns": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "QVN"
-                    }
-                  },
-                  "Property": "TIPO_DE_VENTA"
-                }
-              }
-            ]
+            "Property": "GRUPO DE VENTAS"
           }
         },
         "type": "Categorical",
@@ -59,7 +47,7 @@
                             "Source": "q"
                           }
                         },
-                        "Property": "Grupo Venta"
+                        "Property": "GRUPO DE VENTAS"
                       }
                     }
                   ],
@@ -84,8 +72,7 @@
             }
           ]
         },
-        "howCreated": "User",
-        "isLockedInViewMode": true
+        "howCreated": "User"
       }
     ]
   },

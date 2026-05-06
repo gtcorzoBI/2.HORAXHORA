@@ -25,10 +25,6 @@ relationship 917e7fe8-5122-4b0b-8c08-94148d9d53a6
 	fromColumn: CalendarioEntregas.Date
 	toColumn: LocalDateTable_b6922567-0125-48aa-9936-4283ce50058a.Date
 
-relationship f34992d0-75e9-5976-6a87-27dbb542fec4
-	fromColumn: QVN.FECHA_REPORTE_GTC
-	toColumn: CalendarioEntregas.Date
-
 relationship 4b832971-28ba-43a3-bb13-c54b7a673c85
 	joinOnDateBehavior: datePartOnly
 	fromColumn: RCN.'Fecha NISSAN'
@@ -145,4 +141,75 @@ relationship 66e96bd6-e103-44eb-9739-6dc1bb7b36fb
 	joinOnDateBehavior: datePartOnly
 	fromColumn: incaqvo.FechaActualizacion
 	toColumn: LocalDateTable_96952624-00ca-44dc-8206-1bf29d8d725c.Date
+
+relationship 18dd0ce2-dc58-47b9-af75-1dd6a2826c9f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'REF QVN REPORTE GTC'.FEC_APERTURA
+	toColumn: LocalDateTable_b873b750-4230-4d70-bc59-c0eb7f9f780c.Date
+
+relationship 2906c34f-62b3-4feb-96ac-b104431fbfd5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'REF QVN R PLANTA'.FECHA_REPORTE_GTC
+	toColumn: LocalDateTable_778b40b9-abf1-4d92-9d02-2a841ba3cffb.Date
+
+relationship 1822ad0e-4ca0-4354-ac79-92e9c5bc1823
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'REF QVN R PLANTA'.FEC_APERTURA
+	toColumn: LocalDateTable_7a33b252-d916-4079-9613-88e87a9a14fd.Date
+
+relationship a7079bda-50c7-4b50-99ad-4edbb9419392
+	joinOnDateBehavior: datePartOnly
+	fromColumn: QVN.FEC_REPORTE_PLANTA
+	toColumn: LocalDateTable_348af6a4-bd22-4d4d-9e54-716db4c2a924.Date
+
+relationship 7d9c3109-a5c3-47d9-bb58-57a5340dc96f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: QVN.FEC_ENTREGA
+	toColumn: LocalDateTable_3d3fa73a-8a8f-4072-a67d-e07a22854fef.Date
+
+relationship b33ab895-e12f-49fb-92b8-48dda449b46e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'REF QVN REPORTE GTC'.FECHA_FACTURA
+	toColumn: LocalDateTable_33c07fbf-e027-4971-9497-3bc5c62baf98.Date
+
+relationship 7f990318-afb5-4eb2-a7ae-f4c4c6baa317
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'REF QVN REPORTE GTC'.FEC_REPORTE_PLANTA
+	toColumn: LocalDateTable_25a556b8-d144-4797-bfbe-00b9d2764089.Date
+
+relationship 725e78e3-88f6-41d6-957b-46229fef2bdc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'REF QVN REPORTE GTC'.FEC_ENTREGA
+	toColumn: LocalDateTable_a199eb34-a21f-46f9-ac85-d87b1d32c052.Date
+
+relationship 7c24464c-abba-4da8-9827-95118475d2d8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'REF QVN R PLANTA'.FECHA_FACTURA
+	toColumn: LocalDateTable_78da3b3b-664f-4691-a3fc-5dd2761ac78e.Date
+
+relationship 7f71fd3b-c6e6-4a44-9f9d-df5c016bc56f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'REF QVN R PLANTA'.FEC_ENTREGA
+	toColumn: LocalDateTable_9eea7f3d-e109-4587-8276-4dade9c0d948.Date
+
+relationship 3747581b-eb1c-4437-bb84-a4915289f952
+	joinOnDateBehavior: datePartOnly
+	fromColumn: QVN.FECHA_REPORTE_GTC
+	toColumn: LocalDateTable_8988b136-b4b6-40b0-b447-49d8b4e5673f.Date
+
+relationship bfb20827-5ebd-4a4b-d1fc-96eee4ef3abd
+	fromColumn: 'REF QVN REPORTE GTC'.FECHA_REPORTE_GTC
+	toColumn: Calendario.Date
+
+relationship 078cd715-dbc5-8b59-fe5f-37bb164d8e07
+	fromColumn: 'REF QVN REPORTE GTC'.AGENCIA
+	toColumn: Sucursales.Sucursal
+
+relationship 6129252e-abd2-d96c-7853-e93d79981086
+	fromColumn: 'REF QVN R PLANTA'.AGENCIA
+	toColumn: Sucursales.Sucursal
+
+relationship 7ec86d9c-6bf0-a99e-2131-d2493e6f3461
+	fromColumn: 'REF QVN R PLANTA'.FEC_REPORTE_PLANTA
+	toColumn: Calendario.Date
 
