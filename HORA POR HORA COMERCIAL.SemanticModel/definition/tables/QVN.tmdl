@@ -577,6 +577,14 @@ table QVN
 
 		annotation SummarizationSetBy = Automatic
 
+	column FEC_RECOMPRA
+		dataType: string
+		lineageTag: 7e674568-15ae-47b3-9b96-3c07d2596cb0
+		summarizeBy: none
+		sourceColumn: FEC_RECOMPRA
+
+		annotation SummarizationSetBy = Automatic
+
 	partition QVN = m
 		mode: import
 		source =
