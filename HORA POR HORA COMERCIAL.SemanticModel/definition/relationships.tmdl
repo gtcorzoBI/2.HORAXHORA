@@ -127,21 +127,6 @@ relationship 36db1fe8-ec0f-4447-aa54-1d927a410ae2
 	fromColumn: QVN.FEC_APERTURA
 	toColumn: LocalDateTable_fbb4e342-c98a-4625-b462-34001fb967d4.Date
 
-relationship 7e4b95a7-3537-4a51-8710-837d7591298e
-	joinOnDateBehavior: datePartOnly
-	fromColumn: incaqvo.FechaCompra
-	toColumn: LocalDateTable_e259ef0c-07aa-45f9-9a01-b4c2e8155ac1.Date
-
-relationship fc28c19e-b148-407f-a294-b1d27e56ed5c
-	joinOnDateBehavior: datePartOnly
-	fromColumn: incaqvo.FechaEntradaInventario
-	toColumn: LocalDateTable_ae54cd73-6ac7-4431-9a3c-3daca5b9ce4c.Date
-
-relationship 66e96bd6-e103-44eb-9739-6dc1bb7b36fb
-	joinOnDateBehavior: datePartOnly
-	fromColumn: incaqvo.FechaActualizacion
-	toColumn: LocalDateTable_96952624-00ca-44dc-8206-1bf29d8d725c.Date
-
 relationship 18dd0ce2-dc58-47b9-af75-1dd6a2826c9f
 	joinOnDateBehavior: datePartOnly
 	fromColumn: 'REF QVN REPORTE GTC'.FEC_APERTURA
