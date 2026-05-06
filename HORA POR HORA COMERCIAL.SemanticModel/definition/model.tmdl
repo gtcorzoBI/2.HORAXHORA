@@ -8,11 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-<<<<<<< ARMANDO
-annotation PBI_QueryOrder = ["QINVN","QVN","RCN","VNDAILY","PIPEFYFULL","INVENTARIO_VIVO","RCN (2)","ventas_diario_quiter","QBI VERSION&FAMILIA","incaqvo","REF QVN REPORTE GTC","REF QVN R PLANTA"]
-=======
-annotation PBI_QueryOrder = ["QINVN","QVN","RCN","VNDAILY","PIPEFYFULL","INVENTARIO_VIVO","RCN (2)","ventas_diario_quiter","QBI VERSION&FAMILIA","incaqvo", "HUBSPOT_Deal"]
->>>>>>> main
+annotation PBI_QueryOrder = ["QINVN","QVN","RCN","VNDAILY","PIPEFYFULL","INVENTARIO_VIVO","RCN (2)","ventas_diario_quiter","QBI VERSION&FAMILIA","REF QVN REPORTE GTC","REF QVN R PLANTA"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
