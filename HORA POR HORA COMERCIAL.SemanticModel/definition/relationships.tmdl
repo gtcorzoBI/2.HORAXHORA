@@ -127,6 +127,80 @@ relationship 36db1fe8-ec0f-4447-aa54-1d927a410ae2
 	fromColumn: QVN.FEC_APERTURA
 	toColumn: LocalDateTable_fbb4e342-c98a-4625-b462-34001fb967d4.Date
 
+relationship 0d826f3a-cd27-4072-bce2-c317f0797bae
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.fecha_de_entrega_gtc
+	toColumn: LocalDateTable_5638ec20-9d92-4948-ad60-8efc03b17da4.Date
+
+relationship dcc212fc-da00-4dae-8da7-8cfbf8450f21
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.createdate
+	toColumn: LocalDateTable_220b99b0-8d23-4e25-829d-9e426268c4b1.Date
+
+relationship 805aa6d4-3d91-4edc-9fc4-85e9860444c8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.fecha_de_cita
+	toColumn: LocalDateTable_9d9b4b89-804f-4f64-8cd9-d5c251910e2f.Date
+
+relationship 66bc4116-60ee-408c-9a9b-29fef785a93f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.fecha_de_visita
+	toColumn: LocalDateTable_8dbca44c-7085-409e-b8dd-58664195adb8.Date
+
+relationship 8fa80dc0-3e72-4923-abd7-ed2ed729b614
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.fecha_de_pedido
+	toColumn: LocalDateTable_9165ea76-326e-41f2-8ca1-089f128a3006.Date
+
+relationship ace5f5bf-d419-4ebf-b089-3b73e3b11294
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.fecha_de_asiganacion_de_cita
+	toColumn: LocalDateTable_3ac7e53f-a2d9-4fd6-b178-2123e4a15340.Date
+
+relationship 31c566b2-8d05-48aa-b7ce-e8e61cb73186
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.hs_lastmodifieddate
+	toColumn: LocalDateTable_25106306-703a-4d54-b5af-8a2e33e30c9a.Date
+
+relationship eab5a17b-d80e-41aa-b4ed-6c099630d822
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.hs_analytics_latest_source_timestamp
+	toColumn: LocalDateTable_c8dc6e64-00f6-447c-b0d9-99fc536b24ba.Date
+
+relationship c55bef28-ea12-4489-8005-d74593f87926
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.campo_adicional_71
+	toColumn: LocalDateTable_a2659bcb-c130-4a2a-822b-e7553594db26.Date
+
+relationship 3b8fdc26-d5ad-4b61-82ab-fdf769703e36
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.fecha_de_ingreso_de_solicitud_nrfm
+	toColumn: LocalDateTable_e5ec84f0-8bec-4a7c-a722-e7d4a6c70b7f.Date
+
+relationship 761dda74-af39-4a9c-b5df-36b451b1ba7c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.fecha_de_ingreso_de_solicitud_sicrea
+	toColumn: LocalDateTable_665acbb0-3440-4981-bf47-6c36c636902d.Date
+
+relationship 61b9abbe-e494-49b0-9497-a72fa458a67d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HUBSPOT_Deal.fecha_demo
+	toColumn: LocalDateTable_88003531-4b49-42f0-a387-52d52cc0516b.Date
+relationship 7e4b95a7-3537-4a51-8710-837d7591298e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: incaqvo.FechaCompra
+	toColumn: LocalDateTable_e259ef0c-07aa-45f9-9a01-b4c2e8155ac1.Date
+
+relationship fc28c19e-b148-407f-a294-b1d27e56ed5c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: incaqvo.FechaEntradaInventario
+	toColumn: LocalDateTable_ae54cd73-6ac7-4431-9a3c-3daca5b9ce4c.Date
+
+relationship 66e96bd6-e103-44eb-9739-6dc1bb7b36fb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: incaqvo.FechaActualizacion
+	toColumn: LocalDateTable_96952624-00ca-44dc-8206-1bf29d8d725c.Date
+
 relationship 18dd0ce2-dc58-47b9-af75-1dd6a2826c9f
 	joinOnDateBehavior: datePartOnly
 	fromColumn: 'REF QVN REPORTE GTC'.FEC_APERTURA
