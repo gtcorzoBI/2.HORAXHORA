@@ -1,0 +1,440 @@
+table HUBSPOT_Deal
+	lineageTag: 5b7d3402-e5fe-4cab-88c6-e0369a089537
+
+	column fecha_de_entrega_gtc
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e58c329e-f759-4347-9efe-8e2ace89d4df
+		summarizeBy: none
+		sourceColumn: fecha_de_entrega_gtc
+
+		variation Variación
+			isDefault
+			relationship: 0d826f3a-cd27-4072-bce2-c317f0797bae
+			defaultHierarchy: LocalDateTable_5638ec20-9d92-4948-ad60-8efc03b17da4.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column propietario_de_ctc
+		dataType: string
+		lineageTag: bf0e3c35-c495-48b8-8471-b2d5d45d4b18
+		summarizeBy: none
+		sourceColumn: propietario_de_ctc
+
+		annotation SummarizationSetBy = Automatic
+
+	column agencia
+		dataType: string
+		lineageTag: 118c7e07-3c66-4f5c-bbad-6449ca3dbfcc
+		summarizeBy: none
+		sourceColumn: agencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column DealId
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a2cffdd-9104-4301-8e80-f33eb16685d8
+		summarizeBy: count
+		sourceColumn: DealId
+
+		annotation SummarizationSetBy = Automatic
+
+	column vin_de_vehiculo_asignado
+		dataType: string
+		lineageTag: dafe2ad7-238b-46aa-ad88-49dc24a2389a
+		summarizeBy: none
+		sourceColumn: vin_de_vehiculo_asignado
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_updated_by_user_id
+		dataType: double
+		lineageTag: 46c76848-abc3-4cd1-9f3b-a3bbdb61ed85
+		summarizeBy: sum
+		sourceColumn: hs_updated_by_user_id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column createdate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4d26c753-e06b-456c-92ce-f738ead6af9f
+		summarizeBy: none
+		sourceColumn: createdate
+
+		variation Variación
+			isDefault
+			relationship: dcc212fc-da00-4dae-8da7-8cfbf8450f21
+			defaultHierarchy: LocalDateTable_220b99b0-8d23-4e25-829d-9e426268c4b1.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 10e705a0-aa86-4cdc-92ef-fc4979ac0ae1
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column prospecto_contactado_por_ctc
+		dataType: string
+		lineageTag: f8494e42-4169-48f2-8f1c-79558022544c
+		summarizeBy: none
+		sourceColumn: prospecto_contactado_por_ctc
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_de_cita
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9f5c5e4f-90d4-4547-8f8d-0aa62e8612ab
+		summarizeBy: none
+		sourceColumn: fecha_de_cita
+
+		variation Variación
+			isDefault
+			relationship: 805aa6d4-3d91-4edc-9fc4-85e9860444c8
+			defaultHierarchy: LocalDateTable_9d9b4b89-804f-4f64-8cd9-d5c251910e2f.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_de_visita
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f15c9f12-39cf-404d-bd40-a9d8262ec885
+		summarizeBy: none
+		sourceColumn: fecha_de_visita
+
+		variation Variación
+			isDefault
+			relationship: 66bc4116-60ee-408c-9a9b-29fef785a93f
+			defaultHierarchy: LocalDateTable_8dbca44c-7085-409e-b8dd-58664195adb8.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_de_pedido
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bed9eb3f-b966-4ea5-ba96-24b6be79d3a7
+		summarizeBy: none
+		sourceColumn: fecha_de_pedido
+
+		variation Variación
+			isDefault
+			relationship: 8fa80dc0-3e72-4923-abd7-ed2ed729b614
+			defaultHierarchy: LocalDateTable_9165ea76-326e-41f2-8ca1-089f128a3006.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_de_asiganacion_de_cita
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3c75d9c3-0947-42df-8200-088421b7744f
+		summarizeBy: none
+		sourceColumn: fecha_de_asiganacion_de_cita
+
+		variation Variación
+			isDefault
+			relationship: ace5f5bf-d419-4ebf-b089-3b73e3b11294
+			defaultHierarchy: LocalDateTable_3ac7e53f-a2d9-4fd6-b178-2123e4a15340.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column pipeline
+		dataType: string
+		lineageTag: 4a4e8c0a-280d-4b32-bb15-17a0fc49ea58
+		summarizeBy: none
+		sourceColumn: pipeline
+
+		annotation SummarizationSetBy = Automatic
+
+	column origen_lead_del_negocio__prospecto_
+		dataType: string
+		lineageTag: bd5756fa-1a4a-4c08-a332-27e22d8f024e
+		summarizeBy: none
+		sourceColumn: origen_lead_del_negocio__prospecto_
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_lastmodifieddate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fb5625da-f396-4c21-9c99-506d6c7e97e0
+		summarizeBy: none
+		sourceColumn: hs_lastmodifieddate
+
+		variation Variación
+			isDefault
+			relationship: 31c566b2-8d05-48aa-b7ce-e8e61cb73186
+			defaultHierarchy: LocalDateTable_25106306-703a-4d54-b5af-8a2e33e30c9a.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_analytics_latest_source_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 536030cf-6b60-4ef8-a250-8cde7ed980f9
+		summarizeBy: none
+		sourceColumn: hs_analytics_latest_source_timestamp
+
+		variation Variación
+			isDefault
+			relationship: eab5a17b-d80e-41aa-b4ed-6c099630d822
+			defaultHierarchy: LocalDateTable_c8dc6e64-00f6-447c-b0d9-99fc536b24ba.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column campo_adicional_71
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8db7f7b0-e0f1-47ff-ad7c-d0dec8bdfd19
+		summarizeBy: none
+		sourceColumn: campo_adicional_71
+
+		variation Variación
+			isDefault
+			relationship: c55bef28-ea12-4489-8005-d74593f87926
+			defaultHierarchy: LocalDateTable_a2659bcb-c130-4a2a-822b-e7553594db26.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column medios_que_nos_ha_visto_o_escuchado
+		dataType: string
+		lineageTag: 3ee19cbc-d6da-4286-88fa-b151cfda02f5
+		summarizeBy: none
+		sourceColumn: medios_que_nos_ha_visto_o_escuchado
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_de_visita
+		dataType: string
+		lineageTag: bb74315c-16e2-48cc-a71d-a4e8d372b162
+		summarizeBy: none
+		sourceColumn: tipo_de_visita
+
+		annotation SummarizationSetBy = Automatic
+
+	column hora_de_primera_visita
+		dataType: string
+		lineageTag: 4f06a4bc-7bd4-4d79-96d0-279b44154cba
+		summarizeBy: none
+		sourceColumn: hora_de_primera_visita
+
+		annotation SummarizationSetBy = Automatic
+
+	column hubspot_owner_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 5fc44b87-c96d-47e9-8d95-81351693e754
+		summarizeBy: sum
+		sourceColumn: hubspot_owner_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelo_de_interes
+		dataType: string
+		lineageTag: a92d8016-953f-4ce6-be4e-6a571144b81b
+		summarizeBy: none
+		sourceColumn: modelo_de_interes
+
+		annotation SummarizationSetBy = Automatic
+
+	column auto_de_interes
+		dataType: string
+		lineageTag: 3c99680e-d62e-4621-9dbe-f8246ccc28c3
+		summarizeBy: none
+		sourceColumn: auto_de_interes
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre_del_cliente
+		dataType: string
+		lineageTag: d46def74-57a9-4e3d-a59f-e9e75928776f
+		summarizeBy: none
+		sourceColumn: nombre_del_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_de_solicitud_de_compra
+		dataType: string
+		lineageTag: ea89bf3b-b0ee-4972-931e-b8f12d7236b9
+		summarizeBy: none
+		sourceColumn: tipo_de_solicitud_de_compra
+
+		annotation SummarizationSetBy = Automatic
+
+	column estatus_de_credito
+		dataType: string
+		lineageTag: 355396a2-f50a-40b5-acb1-469119bdc73d
+		summarizeBy: none
+		sourceColumn: estatus_de_credito
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_de_ingreso_de_solicitud_nrfm
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cdf306c2-c4f1-4e33-9447-7f11bf4f87b9
+		summarizeBy: none
+		sourceColumn: fecha_de_ingreso_de_solicitud_nrfm
+
+		variation Variación
+			isDefault
+			relationship: 3b8fdc26-d5ad-4b61-82ab-fdf769703e36
+			defaultHierarchy: LocalDateTable_e5ec84f0-8bec-4a7c-a722-e7d4a6c70b7f.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_de_ingreso_de_solicitud_sicrea
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e4b2df13-a45f-4844-a797-8a92a915b9a4
+		summarizeBy: none
+		sourceColumn: fecha_de_ingreso_de_solicitud_sicrea
+
+		variation Variación
+			isDefault
+			relationship: 761dda74-af39-4a9c-b5df-36b451b1ba7c
+			defaultHierarchy: LocalDateTable_665acbb0-3440-4981-bf47-6c36c636902d.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column fase_1_conociendo_a_mi_cliente
+		dataType: string
+		lineageTag: 73890be1-83ac-42ea-b773-d7737b7995b4
+		summarizeBy: none
+		sourceColumn: fase_1_conociendo_a_mi_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column fase_2__cuenta_cliente_
+		dataType: string
+		lineageTag: 0b0b52e0-3bbe-4acf-b0f4-888429cd1aca
+		summarizeBy: none
+		sourceColumn: fase_2__cuenta_cliente_
+
+		annotation SummarizationSetBy = Automatic
+
+	column fase_3__financiamiento_
+		dataType: string
+		lineageTag: 12a43fde-3cec-417d-a1e9-801d0e1f6626
+		summarizeBy: none
+		sourceColumn: fase_3__financiamiento_
+
+		annotation SummarizationSetBy = Automatic
+
+	column fase_4__solicitud_de_pedido_
+		dataType: string
+		lineageTag: 809f42e7-0eb4-4f64-a138-4939a3f4a191
+		summarizeBy: none
+		sourceColumn: fase_4__solicitud_de_pedido_
+
+		annotation SummarizationSetBy = Automatic
+
+	column tif_movil
+		dataType: string
+		lineageTag: f2731e53-9608-4f70-ba28-2fe3950c6e2e
+		summarizeBy: none
+		sourceColumn: tif_movil
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelo_auto_demo_comercial_nissan
+		dataType: string
+		lineageTag: fdcf5c2f-3fa7-4cd0-95df-b5017a1c6160
+		summarizeBy: none
+		sourceColumn: modelo_auto_demo_comercial_nissan
+
+		annotation SummarizationSetBy = Automatic
+
+	column cita_generada_en_
+		dataType: string
+		lineageTag: 8cc2527a-1b72-4ac0-9dc5-7c13bd7fd07b
+		summarizeBy: none
+		sourceColumn: cita_generada_en_
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_marca_crm
+		dataType: string
+		lineageTag: 53395b6a-3e6e-4391-a65c-9cf8693222e7
+		summarizeBy: none
+		sourceColumn: id_marca_crm
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_demo
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0cf481cb-cfb9-4a58-895b-82515d32ccd4
+		summarizeBy: none
+		sourceColumn: fecha_demo
+
+		variation Variación
+			isDefault
+			relationship: 61b9abbe-e494-49b0-9497-a72fa458a67d
+			defaultHierarchy: LocalDateTable_88003531-4b49-42f0-a387-52d52cc0516b.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column eficiencia_de_piso
+		dataType: string
+		lineageTag: fcfb0ecc-7b7d-4fce-904d-bdb69aa2d3ab
+		summarizeBy: none
+		sourceColumn: eficiencia_de_piso
+
+		annotation SummarizationSetBy = Automatic
+
+	column ejecutivo_comercial
+		dataType: string
+		lineageTag: c1a563b5-2938-417f-a827-b105c515646f
+		summarizeBy: none
+		sourceColumn: ejecutivo_comercial
+
+		annotation SummarizationSetBy = Automatic
+
+	column puntos_de_venta
+		dataType: string
+		lineageTag: e8223d27-d1fe-490c-bfdb-ae0a503f452f
+		summarizeBy: none
+		sourceColumn: puntos_de_venta
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre_de_evento_o_activacion
+		dataType: string
+		lineageTag: 118db44e-b83f-42f9-8045-317d4aa38f54
+		summarizeBy: none
+		sourceColumn: nombre_de_evento_o_activacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column medio_de_comunicacion_del_cliente
+		dataType: string
+		lineageTag: c99b70d3-0db4-4fd9-9446-c67a5099fa8a
+		summarizeBy: none
+		sourceColumn: medio_de_comunicacion_del_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column motivo_de_rechazo_csm
+		dataType: string
+		lineageTag: de753097-812e-47d8-bc11-711e422c8b25
+		summarizeBy: none
+		sourceColumn: motivo_de_rechazo_csm
+
+		annotation SummarizationSetBy = Automatic
+
+	partition HUBSPOT_Deal = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("10.10.10.12", "INTELIGENCIA_NEGOCIOS"),
+				    dbo_HUBSPOT_Deal = Origen{[Schema="dbo",Item="HUBSPOT_Deal"]}[Data]
+				in
+				    dbo_HUBSPOT_Deal
+
