@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "491ac59406d43a51018d",
+  "displayName": "Duplicado de VENTAS",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1480,
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "335L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "afde5152c1108500b08c",
+      "target": "6c989b678527d6e71559",
+      "type": "DataFilter"
+    },
+    {
+      "source": "afde5152c1108500b08c",
+      "target": "237a7052798697e63000",
+      "type": "DataFilter"
+    },
+    {
+      "source": "afde5152c1108500b08c",
+      "target": "29a5f6872de2d3a63793",
+      "type": "NoFilter"
+    },
+    {
+      "source": "afde5152c1108500b08c",
+      "target": "caba0302a72241c80bb9",
+      "type": "DataFilter"
+    },
+    {
+      "source": "6c989b678527d6e71559",
+      "target": "afde5152c1108500b08c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "6c989b678527d6e71559",
+      "target": "caba0302a72241c80bb9",
+      "type": "DataFilter"
+    }
+  ]
+}

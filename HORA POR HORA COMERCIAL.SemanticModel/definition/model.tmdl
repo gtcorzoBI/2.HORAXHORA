@@ -8,7 +8,11 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
+<<<<<<< ARMANDO
+annotation PBI_QueryOrder = ["QINVN","QVN","RCN","VNDAILY","PIPEFYFULL","INVENTARIO_VIVO","RCN (2)","ventas_diario_quiter","QBI VERSION&FAMILIA","incaqvo","REF QVN REPORTE GTC","REF QVN R PLANTA"]
+=======
 annotation PBI_QueryOrder = ["QINVN","QVN","RCN","VNDAILY","PIPEFYFULL","INVENTARIO_VIVO","RCN (2)","ventas_diario_quiter","QBI VERSION&FAMILIA","incaqvo", "HUBSPOT_Deal"]
+>>>>>>> main
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -59,6 +63,19 @@ ref table incaqvo
 ref table LocalDateTable_e259ef0c-07aa-45f9-9a01-b4c2e8155ac1
 ref table LocalDateTable_ae54cd73-6ac7-4431-9a3c-3daca5b9ce4c
 ref table LocalDateTable_96952624-00ca-44dc-8206-1bf29d8d725c
+ref table 'REF QVN REPORTE GTC'
+ref table LocalDateTable_b873b750-4230-4d70-bc59-c0eb7f9f780c
+ref table 'REF QVN R PLANTA'
+ref table LocalDateTable_778b40b9-abf1-4d92-9d02-2a841ba3cffb
+ref table LocalDateTable_7a33b252-d916-4079-9613-88e87a9a14fd
+ref table LocalDateTable_348af6a4-bd22-4d4d-9e54-716db4c2a924
+ref table LocalDateTable_3d3fa73a-8a8f-4072-a67d-e07a22854fef
+ref table LocalDateTable_33c07fbf-e027-4971-9497-3bc5c62baf98
+ref table LocalDateTable_25a556b8-d144-4797-bfbe-00b9d2764089
+ref table LocalDateTable_a199eb34-a21f-46f9-ac85-d87b1d32c052
+ref table LocalDateTable_78da3b3b-664f-4691-a3fc-5dd2761ac78e
+ref table LocalDateTable_9eea7f3d-e109-4587-8276-4dade9c0d948
+ref table LocalDateTable_8988b136-b4b6-40b0-b447-49d8b4e5673f
 
 ref role 'CSA BAJIO'
 ref role 'CSA SLP'

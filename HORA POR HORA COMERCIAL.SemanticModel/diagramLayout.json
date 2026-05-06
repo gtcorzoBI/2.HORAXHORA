@@ -19,12 +19,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 10
         },
         {
           "location": {
-            "x": 1207.2819890959213,
-            "y": 197.94978156321852
+            "x": 1119.1511820404066,
+            "y": 57.659925434032061
           },
           "nodeIndex": "QVN",
           "nodeLineageTag": "76763019-c04b-43db-985c-3540a4b31f7b",
@@ -32,7 +32,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 13
+          "zIndex": 17
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 11
         },
         {
           "location": {
@@ -58,12 +58,12 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 9
+          "zIndex": 16
         },
         {
           "location": {
-            "x": 789.28852622354543,
-            "y": 106.36664685764887
+            "x": 836.05181159994083,
+            "y": 0
           },
           "nodeIndex": "CalendarioEntregas",
           "nodeLineageTag": "c36ce7ae-5676-4268-b623-246471bee383",
@@ -71,7 +71,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 11
+          "zIndex": 12
         },
         {
           "location": {
@@ -84,7 +84,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 9
         },
         {
           "location": {
@@ -97,12 +97,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 12
+          "zIndex": 13
         },
         {
           "location": {
-            "x": 818.74163911245171,
-            "y": 750.80843536108989
+            "x": 601.11250332230338,
+            "y": 891.09829149027644
           },
           "nodeIndex": "VNDAILY",
           "nodeLineageTag": "bf31196c-2cc0-48a9-8d4f-1e36021cfcde",
@@ -110,7 +110,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 4
         },
         {
           "location": {
@@ -123,12 +123,12 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 5
         },
         {
           "location": {
-            "x": 1127.0048177280696,
-            "y": 746.4252712483576
+            "x": 864.4109844606179,
+            "y": 890.3123031757284
           },
           "nodeIndex": "PIPEFYFULL",
           "nodeLineageTag": "693d23f2-8872-4c91-bcf3-229d26acc0fd",
@@ -136,12 +136,12 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 6
         },
         {
           "location": {
-            "x": 411.76744809974821,
-            "y": 742.70553527683046
+            "x": 332.6295805396943,
+            "y": 739.10835947864621
           },
           "nodeIndex": "INVENTARIO_VIVO",
           "nodeLineageTag": "996ccbf2-8bb2-402b-9211-698a3b32e49f",
@@ -149,7 +149,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 7
         },
         {
           "location": {
@@ -175,7 +175,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 6
+          "zIndex": 8
         },
         {
           "location": {
@@ -188,17 +188,55 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 418.86246556989977,
-            "y": 1110.1247693683633
+            "x": 318.14154322074018,
+            "y": 1122.7148846620084
           },
           "nodeIndex": "Estados Clasificacion",
           "nodeLineageTag": "906bc16f-7c3b-40d9-9bf4-396756a5169b",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1737.2273956044342,
+            "y": 505.06238468418167
+          },
+          "nodeIndex": "incaqvo",
+          "nodeLineageTag": "c266839f-2f31-49d1-a7e2-57fc975ad08e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 15
+        },
+        {
+          "location": {
+            "x": 1134.3466732954548,
+            "y": 451.10474771141753
+          },
+          "nodeIndex": "REF QVN REPORTE GTC",
+          "nodeLineageTag": "5e38a65f-527d-4518-8d03-a14732a7bb07",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 18
+        },
+        {
+          "location": {
+            "x": 1141.7179129483804,
+            "y": 785.64209694255476
+          },
+          "nodeIndex": "REF QVN R PLANTA",
+          "size": {
+            "height": 300,
             "width": 234
           },
           "zIndex": 0
